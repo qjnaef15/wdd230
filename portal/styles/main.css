@@ -1,3 +1,49 @@
+body {
+    margin: auto;
+    max-width: 800px;
+    border: 10px solid darkslateblue;
+    background-color: gray;
+    font-family: 'Libre Baskerville', serif;
+}
+
+header {
+    background-color: cadetblue;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+}
+
+header img {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+header h1 {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: 700;
+    margin: auto;
+}
+
 a {
-    color: rebeccapurple;
+    color:aquamarine;
+}
+main h1{
+    font-weight: 400;
+    text-align: center;
+}
+
+main ul {
+    line-height: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;
+}
+
+footer {
+    background-color: cadetblue;
+    padding: 25px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 0.75em;
 }

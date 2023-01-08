@@ -1,10 +1,9 @@
-let date = new date();
+// Last Modified
+let currentDate = document.lastModified;
+document.querySelector('#lastUpdated').textContent = currentDate;
+
+// Copyright Date
+let date = new Date();
 let year = date.getFullYear();
-
-document.querySelector('h1').innerHTML = year + '&copy:';
-
-let currentdate = document.lastModified;
-
-document.querySelector('div').textContent = `Last Updated:  ${currentdate}`;
-
+document.querySelector('#copyrightYear').innerHTML = year;
 
