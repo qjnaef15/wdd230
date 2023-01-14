@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background: rgb(126, 63, 251);
+    background: linear-gradient(90deg,  rgb(153, 238, 217) 0%,rgb(28, 56, 236)  100%);
+}
+
+body {
+    font-family: 'Noto Sans SC', sans-serif;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    background-color: darkslateblue;
+    border: 0.155em solid cyan;
+    padding: 0.125em;
+    border-radius: 1.5625em;
+    color:aliceblue;
+}
+
+p {
+    font-size: 1em;
+}
+
+main {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0.625em;
+}
+
+section {
+    background-color: whitesmoke;
+    border-radius: 0.9375em;
+    text-align: center;
+    margin: 0.625em;
+}
+
+section a {
+    color: black;
+}
+
+h2, h3, p {
+    color: hsla(200, 0%, 0%, .7);
+}
+
+.description {
+    padding: 1em;
+}
+
+footer {
+    text-align: center;
+    background-color: cyan;
+    border: 0.155em solid darkslateblue;
+    border-radius: 1.25em;
+    padding: 0.0625em;
+}
+
+footer a {
+    color: hsla(200, 0%, 0%, .7);
+}
+
+.responsive {
+    max-width: 23em;
+    width: 100%;
+    height: auto;
+    padding: 0.625em;
+    border-radius: 2em;
+}
+
+.outer {
+    text-align: center;
+    line-height: 0.7;
+}
+
+.up {
+    font-size: 0.9375em;
+}
+
+.date {
+    color: hsla(200, 0%, 0%, .7);
+}
