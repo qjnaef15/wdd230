@@ -1,0 +1,104 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, img {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    flex-grow: 1;
+}
+
+/* Typography */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header */
+header {
+    background-color: darkcyan;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.centered-content {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    margin-right: 20px;
+    width: 150px;
+    height: auto;
+}
+
+/* Navigation */
+nav ul {
+    list-style-type: none;
+    background-color: darkslategray;
+}
+
+nav ul li {
+    display:-webkit-flex;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav a {
+    color: aquamarine;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: darkslategray;
+    background-color: aquamarine;
+}
+
+/* Main Content */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+a {
+    color: aquamarine;
+}
+
+.card {
+    background-color: gray;
+    padding: 20px;
+    border: 1px solid darkslateblue;
+}
+
+.card ul {
+    list-style-type: none;
+}
+
+h3 {
+    text-align: center;
+    background-color:darkcyan;
+    color: white;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 2px solid darkslategrey;
+}
+
+/* Footer */
+footer {
+    background-color: cadetblue;
+    color: black;
+    text-align: center;
+    text-decoration: solid;
+    padding: 10px;
+}
