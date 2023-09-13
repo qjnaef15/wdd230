@@ -76,9 +76,10 @@ a {
 }
 
 .card {
-    background-color: gray;
+    background-color: darkslategray;
     padding: 20px;
     border: 1px solid darkslateblue;
+    color:ghostwhite;
 }
 
 .card ul {
