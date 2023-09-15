@@ -1,0 +1,14 @@
+/* Media query for viewport width 500px or greater */
+@media screen and (min-width: 500px) {
+    /* Header styles for larger screens */
+    header {
+        background-color: black; /* Black background */
+        color: white; /* White text */
+    }
+
+    /* Main element styles for larger screens */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    }
+}
