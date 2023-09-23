@@ -19,19 +19,33 @@ header {
     color: whitesmoke;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 20px;
+    position: relative;
 }
 
 .centered-content {
     display: flex;
     align-items: center;
+    margin-right: auto;
 }
 
 img {
     margin-right: 20px;
     width: 150px;
     height: auto;
+}
+
+/* Style the hamburger button */
+#hamburger-button {
+    background: none;
+    border: none;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: whitesmoke;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    right: 10px; /* Adjust the right position as needed */
 }
 
 /* Navigation */
@@ -95,6 +109,13 @@ h3 {
     border: 2px solid darkslategrey;
 }
 
+.frame {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
 /* Footer */
 footer {
     background-color: cadetblue;
@@ -113,3 +134,53 @@ footer {
 		flex: 1 1 100%;
 	}
 }
+
+/* Hide menu items by default */
+nav ul {
+    display: none;
+}
+
+/* Show menu items on larger screens */
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+    /* Additional styles for larger screens if needed */
+}
+
+/* Show menu items when the "show-menu" class is applied */
+nav ul.show-menu {
+    display: flex;
+    flex-direction: column; /* Display items vertically for better mobile experience */
+    background-color: darkslategray;
+    /* Additional styles for the open menu */
+}
+
+/* Style individual menu items */
+nav ul.show-menu li {
+    margin-right: 0; /* Reset margin for mobile layout */
+}
+
+/* Style links within the menu items */
+nav ul.show-menu a {
+    color: aquamarine;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav ul.show-menu a:hover {
+    color: darkslategray;
+    
+}
+
+#hamburger-button::before {
+	content: "✖";
+}
+
+/* Style the button when menu is open */
+#hamburger-button.active::before{
+    /* Add styling to indicate it's active, e.g., change to an 'X' symbol */
+    content: "☰";
+}
+
+
