@@ -76,6 +76,7 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
+    text-align: center;
 }
 
 h2 {
@@ -86,15 +87,32 @@ a {
     color: aquamarine;
 }
 
+/* Grid container for card sections */
+#grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center; /* Center-align card content within the grid items */
+}
+
 .card {
     background-color: darkslategray;
-    padding: 20px;
+    padding: 10px;
     border: 1px solid darkslateblue;
     color:ghostwhite;
 }
 
 .card ul {
     list-style-type: none;
+}
+
+#card1 {
+    width: auto;
+}
+
+#card2 {
+    width: 95%;
+
 }
 
 h3 {
@@ -104,6 +122,14 @@ h3 {
     padding: 5px;
     margin-bottom: 5px;
     border: 2px solid darkslategrey;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
 }
 
 #frame {
