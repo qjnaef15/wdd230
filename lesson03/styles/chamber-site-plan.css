@@ -3,7 +3,7 @@ h1, h2, h3 {
     font-family: 'Playfair Display', serif;
 }
 
-p {
+p, li {
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -59,7 +59,7 @@ h3 {
 }
 
 #large {
-    width: 500px;
+    width: 600px;
     height: auto;
 }
 
