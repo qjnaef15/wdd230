@@ -88,11 +88,10 @@ a {
 }
 
 /* Grid container for card sections */
-#grid {
+.grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
-    justify-items: center; /* Center-align card content within the grid items */
 }
 
 .card {
@@ -154,6 +153,11 @@ footer {
 	nav ul li {
 		flex: 1 1 100%;
 	}
+    .grid {
+        display: grid;
+        grid-template-columns: 550px 220px;
+        gap: 20px;
+    }
 }
 
 /* Hide menu items by default */
