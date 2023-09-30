@@ -5,10 +5,13 @@ if (currentYearElement) {
     currentYearElement.textContent = currentYear;
 }
 
-const lastModifiedElement = document.getElementById("lastModified");
-if (lastModifiedElement) {
-    const lastModifiedDate = new Date(document.lastModified);
-    lastModifiedElement.textContent = `Last Modified: ${lastModifiedDate.toDateString()}`;
-}
+// JavaScript code to get the last modified date and time
+var lastModified = new Date(document.lastModified);
+        
+// Format the last modified date and time as a string
+var formattedLastModified = lastModified.toLocaleString();
+
+// Display the formatted last modified date and time in the HTML element with id "lastModified"
+document.getElementById("lastModified").innerHTML = "Last Modified: " + formattedLastModified;
 
 
