@@ -1,0 +1,6 @@
+/* Larger Views ******************************/
+@media (min-width: 640px) {
+    main {
+        flex-direction: row; /* Side by side for larger screens */
+    }
+}

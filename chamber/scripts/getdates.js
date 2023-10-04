@@ -12,6 +12,6 @@ var lastModified = new Date(document.lastModified);
 var formattedLastModified = lastModified.toLocaleString();
 
 // Display the formatted last modified date and time in the HTML element with id "lastModified"
-document.getElementById("lastModified").innerHTML = "Last Modified: " + formattedLastModified;
+document.getElementById("lastModified").innerHTML = " | Last Modified: " + formattedLastModified;
 
 

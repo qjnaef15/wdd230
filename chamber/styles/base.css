@@ -1,6 +1,6 @@
 
 /* CSS for basic styling */
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Playfair Display', serif;
 }
 
@@ -9,7 +9,6 @@ p, li {
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #b2b7bb;
     color: #333;
     margin: 0;
@@ -21,6 +20,26 @@ header {
     color: #7ac142;
     text-align: center;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#main-logo {
+    display: flex;
+    justify-content: left;
+    margin-right: 10px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
 
 nav ul {
@@ -40,7 +59,13 @@ nav ul li a {
 }
 
 main {
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
 }
 
 section {
@@ -55,20 +80,43 @@ h3 {
     color: #2d5980;
 }
 
-#wire {
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.address-info {
+    display: flex;
+    padding: 10px;
+    color: #7ac142;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    width: 120px;
+}
+
+.contact-info {
+    padding: 20px;
+    color: #7ac142;
     text-align: center;
 }
 
-#large {
-    width: 600px;
-    height: auto;
+.development-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 footer {
     background-color: #002a5c;
     color: #fff;
-    text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Navigation menu styles */
