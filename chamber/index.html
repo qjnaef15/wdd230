@@ -12,20 +12,20 @@
     <!-- Link to your CSS file(s) for styling -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-   <!--- <link rel="stylesheet" href="styles/normalize.css"> -->
-  <!--  <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/medium.css"> -->
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
 </head>
 <body>
     <header>
         <!-- Navigation menu goes here -->
-        <div class="title">
-        <img src="images/logo1.png" alt="Logo" id="main-logo">
-        <h1>Pasco <br> Chamber of Commerce</h1>
-
+        <div id="logo">
+            <a href="index.html"><img src="images/logo2.png" alt="Pasco Chamber of Commerce Logo"></a>
+            <h1>Pasco <br> Chamber of Commerce</h1>
         </div>
-        <div class="menu">
+        <a href="#" id="hamburger">&#9776;</a>
         <nav>
             <ul>
                 <li><a href="#home">Home</a></li>
@@ -34,11 +34,16 @@
                 <li><a href="#join">Join</a></li>
             </ul>
         </nav>
-        </div>
+        <section class="socials">
+            <a href="#"><img src="images/facebook.webp" alt="Facebook Logo and Link to our Facebook"></a>
+            <a href="#"><img src="images/instagram.webp" alt="Instagram Logo and Link to our Instagram"></a>
+            <a href="#"><img src="images/linkedin.webp" alt="LinkedIn Logo and Link to our LinkedIn"></a>
+            <a href="#"><img src="images/youtube.webp" alt="Youtube Logo and Link to our Youtube"></a>
+        </section>
     </header>
 
     <main class="home">
-        <section class="hero">
+        <section id="hero">
             <!-- Hero image and content -->
             <div class="slideshow-container">
 
@@ -71,9 +76,9 @@
                 <script src="scripts/showSlides.js"></script>
         </section>
 
-        <section class="events">
+        <section id="event">
             <!-- Current event(s) section -->
-            <h2 id="event-title">Upcoming Events</h2>
+            <h2 id=>Upcoming Events</h2>
             <ul>
                 <li>October 5th - Business Mixer</li>
                 <li>October 22nd - How to Grow your Business</li>
@@ -81,7 +86,7 @@
             </ul>
         </section>
 
-        <section class="weather">
+        <section id="weather">
             <!-- Weather card section -->
             <h2>Weather</h2>
             <div id="weather_top">
@@ -95,7 +100,12 @@
             <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
         </section>
 
-        <section class="join">
+        <section id="news">
+            <h2>Pasco News</h2>
+
+        </section>
+
+        <section id="join">
             <!-- Call to action to join the chamber -->
             <h2>Join Us</h2>
             <p>Do you own a business? Are you a concerned citizen of Pasco? Do you want to get involved with the community?</p>
@@ -103,30 +113,32 @@
             <a href="#join"><button>Join Us</button></a>
         </section>
 
-        <section class="spotlights">
+        <section id="spotlights">
             <!-- Company 'spotlights' advertisements -->
         </section>
     </main>
 
     <footer>
         <!-- Contact information and development information -->
-        <div class="info">
-        <div class="address-info">
+        <section id="about">
+        <div id="address">
             <!-- Address details here -->
             <img src="images/logo2.png" alt="Logo" id="bottom-logo">
             <div class="address">
-            <h4>Pasco <br> Chamber of Commerce</h4>
+            <h4>Pasco Chamber of Commerce</h4>
             <p>149 Main Street, Pasco, WA 99301</p>
             </div>
         </div>
-        <div class="contact-info">
+        <div id="contact">
             <!-- Address details here -->
+            <h3>Contact Us</h3>
             <p>info@pascochamber.com</p>
             <p>+(123) 456-0987</p>
         </div>
         </div>
-        <div class="development-info">
-            <p>&copy; <span id="currentYear"></span> | Quentin Naef | Washington State</p> <p id="lastModified"></p>
+        <div id="copyright">
+            <p>&copy; <span id="currentYear"></span> | Quentin Naef | Washington State</p> 
+            <p><span id="lastModified"></span></p>
         </div>
     </footer>
 
