@@ -46,6 +46,52 @@ section {
     margin-bottom: 30px;
 }
 
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+
+.primary {
+    background-color: #002a5c;
+    color: #fff;
+}
+
+.secondary {
+    background-color: #7ac142;
+}
+
+.text {
+    background-color: #333;
+    color: #fff;
+}
+
+.heading {
+    background-color: #2d5980;
+    color: #fff;
+}
+
+.footer-bck {
+    background-color: #002a5c;
+    color: #fff;
+}
+
+.footer-txt {
+    background-color: #fff;
+}
+
+.background {
+    background-color: #b2b7bb;
+}
+
 h2 {
     color: #2d5980;
 }

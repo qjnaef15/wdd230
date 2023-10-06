@@ -37,22 +37,70 @@
         </div>
     </header>
 
-    <main>
+    <main class="home">
         <section class="hero">
             <!-- Hero image and content -->
-            
-        </section>
+            <div class="slideshow-container">
 
-        <section class="cta">
-            <!-- Call to action to join the chamber -->
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/pasco.jpg" style="width:100%">
+                  <div class="text">Pasco</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/aerial.jpg" style="width:100%">
+                  <div class="text">Aerial View</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/country.jpg" style="width:100%">
+                  <div class="text">Country View</div>
+                </div>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                  <span class="dot"></span> 
+                </div>
+                <script src="scripts/showSlides.js"></script>
         </section>
 
         <section class="events">
             <!-- Current event(s) section -->
+            <h2 id="event-title">Upcoming Events</h2>
+            <ul>
+                <li>October 5th - Business Mixer</li>
+                <li>October 22nd - How to Grow your Business</li>
+                <li>November 15th - Annual Gala</li>
+            </ul>
         </section>
 
         <section class="weather">
             <!-- Weather card section -->
+            <h2>Weather</h2>
+            <div id="weather_top">
+                <h2><span id="temp"></span>&#8457;</h2>
+                <figure><img src="#" alt="Placeholder" id="weathericon" />
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+            <hr>
+            <p>Wind: <span id="wind"></span> MPH</p>
+            <p>Wind Chill: <span id="windchill"></span><span id="windDegree"></span></p>
+        </section>
+
+        <section class="join">
+            <!-- Call to action to join the chamber -->
+            <h2>Join Us</h2>
+            <p>Do you own a business? Are you a concerned citizen of Pasco? Do you want to get involved with the community?</p>
+            <p>Join us to make a difference in Pasco's economy!</p>
+            <a href="#join"><button>Join Us</button></a>
         </section>
 
         <section class="spotlights">
