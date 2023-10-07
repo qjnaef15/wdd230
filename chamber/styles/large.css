@@ -1,7 +1,7 @@
 @media screen and (min-width: 1200px) {
 
     body {
-        background-color: #14213d;
+        background-color: #002a5c;
     }
   
     /* HEADER / NAV */
@@ -145,7 +145,7 @@
     }
   
     #spotlights h3:hover {
-        color: #fca311;
+        color: #7ac142;
     }
   
     #spot1, #spot2, #spot3 {
@@ -156,7 +156,7 @@
   
   
     button:hover {
-        background-color: #fca311;
+        background-color: #7ac142;
         
     }
   
