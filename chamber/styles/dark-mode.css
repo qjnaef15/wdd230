@@ -1,0 +1,30 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333; /* Set the overall background color for dark mode */
+    color: #fff; /* Set text color for dark mode */
+}
+
+/* Example: Change the background color for specific elements */
+.dark-mode #hero {
+    background-color: #222; /* Change the hero section background color */
+}
+
+.dark-mode #event {
+    background-color: #222; /* Change the event section background color */
+}
+
+.dark-mode #weather {
+    background-color: #222; /* Change the weather section background color */
+}
+
+.dark-mode #news {
+    background-color: #222; /* Change the news section background color */
+}
+
+.dark-mode #join {
+    background-color: #222; /* Change the join section background color */
+}
+
+.dark-mode #spotlights {
+    background-color: #222; /* Change the spotlights section background color */
+}

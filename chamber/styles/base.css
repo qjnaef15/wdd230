@@ -266,6 +266,22 @@ footer img {
     font-size: .7em;
 }
 
+#dark-mode-toggle {
+    background: transparent; /* Set the button's background to transparent */
+    color: #fff; /* Text color for the button */
+    /* You can add more styles like padding, margin, etc. as needed */
+    font-weight: bold; /* Make the font bold */
+    /* You can add more styles like padding, margin, etc. as needed */
+
+    /* Change text color on hover */
+    transition: color 0.3s; /* Add a smooth transition effect */
+}
+
+/* Change text color on hover */
+.dark-mode #dark-mode-toggle:hover {
+    color: #7ac142; /* Change text color to a different color on hover */
+}
+
 footer a {
     text-decoration: none;
     color: #7ac142;
