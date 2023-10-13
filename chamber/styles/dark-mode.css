@@ -28,3 +28,7 @@ body.dark-mode {
 .dark-mode #spotlights {
     background-color: #222; /* Change the spotlights section background color */
 }
+
+.dark-mode #weather_top {
+    background-color: #222; /* Change the background color of the "weather_top" div */
+}
