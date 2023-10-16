@@ -79,6 +79,39 @@ main {
     text-align: center;
 }
 
+ /* CSS for image and overlay */
+ .hero-container {
+    position: relative;
+    max-width: 960px; 
+    margin: 0 auto;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .herolabel {
+	position: absolute;
+	top: 30px;
+	left: 30px;
+	background: radial-gradient(#fff, aquamarine);
+	border: 1px solid rgba(0,0,0,.75);
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+	/* Buenas */
+}
+
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 2rem;
+    color: darkslategray;
+	font-family:"Great Vibes", serif;
+}
+
 h2 {
     text-align: center;
 }
