@@ -121,6 +121,7 @@ a {
 }
 
 /* Grid container for card sections */
+
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -179,6 +180,7 @@ footer {
 }
 
 /* Larger Views ******************************/
+
 @media (min-width: 640px) {
 	nav ul {
 		display: flex;
@@ -188,8 +190,16 @@ footer {
 	}
     .grid {
         display: grid;
-        grid-template-columns: 550px 220px;
-        gap: 20px;
+        grid-template-columns: 500px 200px;
+        gap: 2px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 500px 265px;
+        gap: 25px; /* Increase the gap for full-screen size */
     }
 }
 
