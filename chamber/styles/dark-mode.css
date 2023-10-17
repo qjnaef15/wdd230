@@ -4,6 +4,10 @@ body.dark-mode {
     color: #fff; /* Set text color for dark mode */
 }
 
+.dark-mode .home {
+    background-color: #333;
+}
+
 /* Example: Change the background color for specific elements */
 .dark-mode #hero {
     background-color: #222; /* Change the hero section background color */
