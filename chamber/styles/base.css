@@ -263,7 +263,13 @@ footer img {
 
 #copyright {
     /* line-height: .5em; */
+   /* font-size: .7em; */
+    align-self: top;
+}
+
+#copy {
     font-size: .7em;
+    align-self: end;
 }
 
 #dark-mode-toggle {

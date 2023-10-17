@@ -112,10 +112,11 @@
     #contact {
         grid-column: 3;
         grid-row: 1;
+        align-self: center;
         /* line-height: .5em; */
     }
   
-    #copyright-large {
+    #copyright {
         display: block;
     }
   
