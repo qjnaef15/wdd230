@@ -27,7 +27,7 @@
     <header>
         <!-- Navigation menu goes here -->
         <div id="logo">
-            <a href="index.html"><img src="images/logo2.png" alt="Pasco Chamber of Commerce Logo"></a>
+            <a href="index.html"><img src="images/logo2.webp" alt="Pasco Chamber of Commerce Logo"></a>
             <h1>Pasco <br> Chamber of Commerce</h1>
         </div>
         <a href="#" id="hamburger">&#9776;</a>
@@ -43,8 +43,12 @@
 
     <main class="home">
         <section id="hero">
-                <img src="images/aerial1.jpg" alt="aerial view of Pasco" style="width:100%">
+            <picture>
+                <source srcset="images/wdd230-small.webp" media="(max-width: 400px)">
+                <source srcset="images/wdd230-medium.webp" media="(max-width: 700px)">
+                <img srcset="images/wdd230-large.webp" alt="wdd230 srcset picture" width="932" height="641">
                 <a href="#"><button id="hero">Discover</button></a>
+            </picture>
         </section>
 
         <section id="event">
@@ -122,7 +126,7 @@
         <section id="about">
         <div id="address">
             <!-- Address details here -->
-            <img src="images/logo2.png" alt="Logo" id="bottom-logo">
+            <img src="images/logo2.webp" alt="Logo" id="bottom-logo">
             </div>
         </div>
         <div id="contact">
