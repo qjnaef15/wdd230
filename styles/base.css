@@ -83,7 +83,6 @@ main {
  .hero-container {
     position: relative;
     max-width: 960px; 
-    margin: 0 auto;
   }
 
   .hero-image {
