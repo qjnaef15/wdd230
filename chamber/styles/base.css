@@ -208,6 +208,7 @@ main section,  main section div {
 
 #spotlights a {
     text-decoration: none;
+    color: #002a5c;
 }
 
 #spotlights h3:hover {
@@ -233,8 +234,8 @@ button:hover {
 }
 
 #join button {
-    background-color: #14213d;
-    color: #e5e5e5;
+    background-color: #002a5c;
+    color: #7ac142;
     cursor: pointer;
     padding: 10px;
     border: none;
