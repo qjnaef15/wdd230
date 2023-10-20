@@ -169,9 +169,9 @@ main section,  main section div {
     object-fit: cover;
 }
 
-#hero button {
-    background-color: #14213d;
-    color: #e5e5e5;
+#hero-button  {
+    background-color: #002a5c;
+    color: #7ac142;
     cursor: pointer;
     padding: 10px;
     border: none;
