@@ -5,7 +5,8 @@ const getWeather = async () => {
     jsObject = await response.json();
 
     let temp = kelvinToFahrenheit(jsObject.main.temp);
-    document.querySelector('#temp').textContent = temp;
+    //document.querySelector('#temp').textContent = temp;
+    document.querySelector('#temp').textContent = 40;
 
     const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description.toUpperCase();
@@ -14,10 +15,11 @@ const getWeather = async () => {
     document.querySelector('figcaption').textContent = desc;
 
     let wind = jsObject.wind.speed;
-    document.querySelector('#wind').textContent = wind;
+    //document.querySelector('#wind').textContent = wind;
+    document.querySelector('#wind').textContent = 15;
 
-    let temp_int = parseInt(temp);
-    let wind_int = parseInt(wind);
+    let temp_int = 40;
+    let wind_int = 15;
     windchill(temp_int, wind_int);
 };
 
