@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasco Chamber of Commerce</title>
+    <meta name="description" content="Welcome to Pasco Chamber of Commerce">
+    <meta name="author" content="Quentin Naef">
+    <meta property="og:title" content="Pasco Chamber of Commerce - Quentin Naef">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://content.civicplus.com/api/assets/e7858c04-435e-481f-a68d-b6bf6d071629">
+    <meta property="og:url" content="https://pasco-chamber.com">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Add social media meta settings here -->
+
+    <!-- Link to your CSS file(s) for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+
+</head>
+<body class="light-mode">
+    <header>
+        <!-- Navigation menu goes here -->
+        <div id="logo">
+            <a href="index.html"><img src="images/logo2.webp" alt="Pasco Chamber of Commerce Logo"></a>
+            <h1>Pasco <br> Chamber of Commerce</h1>
+        </div>
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#directory">Directory</a></li>
+                <li><a href="#join">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="discover">
+        <div class="container">
+            <div class="sidebar">
+                <div class="sidebar-content">
+                    <div class="user-message">
+                        <p id="message"></p>
+                    </div>
+                    <div class="history">
+                        <h3>History of Pasco, Washington:</h3>
+                        <p>
+                            Pasco grew to be a vital railroad town in the years before World War II, including what is considered the beginning of United Airlines in 1926. The war brought the Manhattan Project, the United States' development of the atomic bomb, to the nearby Hanford Site.
+                        </p>
+                    </div>
+                    <div class="demographics">
+                        <h3>Demographics for Pasco, Washington:</h3>
+                        <ul>
+                            <li>Race and ethnicity: 55.5% Hispanic, 36.8% White, 2.9% two or more races</li>
+                            <li>Population: 77,818 residents</li>
+                            <li>Median age: 29.9</li>
+                            <li>Gender: 50.35% male, 49.65% female</li>
+                            <li>Citizenship: 74.89% US-born citizens, 10.56% non-US-born citizens, 14.55% non-citizens</li>
+                            <li>Age groups: Largest age group is between 25 and 64 years old</li>
+                        </ul>
+                    </div>
+                    <div id="population">
+                        <h3>Population Growth</h3>
+                        <p>Pasco grew by more than a third as 20,000 residents joined the city between 2010 and 2022. With a current population estimated at 80,180</p>
+                    </div>
+                    <div class="attractions">
+                        <h3>Attractions in Pasco, Washington:</h3>
+                        <ul>
+                            <li>Franklin County Historical Society & Museum: Small museum with local history exhibits, including old photographs and artifacts</li>
+                            <li>Sacajawea State Park Interpretive Center: Small museum in a beautiful park</li>
+                            <li>REACH Museum: Center for the study of regional history, geology, science, and technology</li>
+                            <li>East Benton County Historical Society Museum: Local heritage museum with ancient Native American petroglyphs and a gift shop</li>
+                            <li>Pasco Aviation Museum: Museum with cool displays</li>
+                            <li>CPCCo Planetarium: Educational and fun planetarium</li>
+                        </ul>
+                    </div>
+                    <div class="calendar">
+                        <div class="calendar-header">
+                            <span id="month-year"></span>
+                        </div>
+                        <div class="calendar-days">
+                            <div class="day">Sun</div>
+                            <div class="day">Mon</div>
+                            <div class="day">Tue</div>
+                            <div class="day">Wed</div>
+                            <div class="day">Thu</div>
+                            <div class="day">Fri</div>
+                            <div class="day">Sat</div>
+                        </div>
+                        <div class="calendar-grid" id="calendar">
+                            <!-- Calendar days will be generated here -->
+                        </div>
+                    </div>
+                    <button id="prev-month">Previous Month</button>
+                    <button id="next-month">Next Month</button>
+                    <div id="event-display" class="event-display">
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="image-gallery">
+                    <!-- Your image gallery content here -->
+                <img data-src="image1.jpg" alt="Image 1 Caption">
+                <img data-src="image2.jpg" alt="Image 2 Caption">
+                <img data-src="image3.jpg" alt="Image 3 Caption">
+                <img data-src="image4.jpg" alt="Image 4 Caption">
+                <img data-src="image5.jpg" alt="Image 5 Caption">
+                <img data-src="image6.jpg" alt="Image 6 Caption">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Contact information and development information -->
+        <section id="about">
+        <div id="address">
+            <!-- Address details here -->
+            <img src="images/logo2.webp" alt="Logo" id="bottom-logo">
+        </div>
+        <div id="contact">
+            <!-- Address details here -->
+            <h3>Contact Us</h3>
+            <p>info@pascochamber.com</p>
+            <p>+(123) 456-0987</p>
+        </div>
+        <div id="copyright">
+            <h4>Pasco Chamber of Commerce</h4>
+            <p>149 Main Street, Pasco, WA 99301</p>
+            <div id="copy">
+            <p>&copy; <span id="currentYear"></span> | Quentin Naef | Washington State</p> 
+            <p><span id="lastModified"></span></p>
+            </div>
+        </div>
+        </section>
+        <section class="socials">
+            <a href="https://www.facebook.com/CityofPasco/"><img src="images/facebook.svg" alt="Facebook Logo and Link to our Facebook"></a>
+            <a href="https://www.instagram.com/city_of_pasco/?hl=en"><img src="images/insta.svg" alt="Instagram Logo and Link to our Instagram"></a>
+            <a href="https://www.linkedin.com/company/city-of-pasco/"><img src="images/linkedin.svg" alt="LinkedIn Logo and Link to our LinkedIn"></a>
+            <a href="https://www.youtube.com/c/cityofpascotv"><img src="images/youtube.svg" alt="Youtube Logo and Link to our Youtube"></a>
+        </section>
+        <button id="dark-mode-toggle">Dark Mode</button>
+
+    </footer>
+
+    <!-- Include JavaScript for dynamic last modified date -->
+    <script src="scripts/calendar.js"></script>
+    <script src="scripts/discover.js"></script>
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/darkMode.js"></script>
+</body>
+</html>

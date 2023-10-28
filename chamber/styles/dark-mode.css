@@ -40,3 +40,45 @@ body.dark-mode {
 .dark-mode #weather_top {
     background-color: #222; /* Change the background color of the "weather_top" div */
 }
+
+.dark-mode .discover {
+    background-color: #222;
+}
+
+.dark-mode .discover h3 {
+    color: #7ac142;
+}
+
+.dark-mode .sidebar {
+    background-color: #222;
+    color: #7ac142;
+}
+
+.dark-mode .sidebar p {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .calendar {
+    background-color: #222;
+}
+
+.dark-mode #prev-month {
+    background-color: #222;
+    color: #7ac142;
+}
+
+.dark-mode #next-month {
+    background-color: #222;
+    color: #7ac142;
+}
+
+.dark-mode .event-day {
+    background-color: #7ac142;
+    color: #fff;
+}
+
+.dark-mode .today {
+    background-color: #002a5c;
+    color: #fff;
+}
