@@ -304,10 +304,10 @@ footer a {
         flex-direction: column;
     }
     .sidebar {
-        width: 100%; /* Make the sidebar full width on mobile */
+        width: 95%; /* Make the sidebar full width on mobile */
     }
     .main-content {
-        width: 100%; /* Make the main content full width on mobile */
+        width: 95%; /* Make the main content full width on mobile */
     }
     .main-content img {
         max-width: 100%; /* Ensure images are responsive on mobile */
@@ -315,8 +315,7 @@ footer a {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
     gap: 20px;
     padding: 20px;
 }
