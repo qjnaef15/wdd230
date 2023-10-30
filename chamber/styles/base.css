@@ -343,6 +343,12 @@ img {
     max-width: 100%;
 }
 
+/* Add a hover effect for the images */
+img[data-src]:hover {
+    transform: scale(1.1); /* You can adjust the scale value for your desired zoom effect */
+    transition: transform 0.3s ease; /* You can adjust the transition duration for the smooth effect */
+}
+
 .user-message {
     font-weight: bold;
 }
