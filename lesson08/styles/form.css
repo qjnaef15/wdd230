@@ -1,0 +1,42 @@
+:root {
+    --main-background-color: #e5e5e5;
+    --form-label-color: #002a5c;
+    --link-color: #0073e6;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #002a5c;
+}
+
+form {
+    text-align: center;
+    padding: 20px;
+    background-color: #0000;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #7ac142; /* Add border property here */
+}
+
+label {
+    color: var(--form-label-color);
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
