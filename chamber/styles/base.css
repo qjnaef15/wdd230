@@ -440,23 +440,24 @@ img[data-src]:hover {
     padding: 10px;
 }
 
-.join {
+main .join {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #002a5c;
 }
 
 .membershipLevels {
     margin: 10px;
 }
 
-.form h1 {
+.join h1 {
     display: block;
     text-align: center;
 }
 
 
-.form form {
+form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -465,7 +466,7 @@ img[data-src]:hover {
     color: black;
 }
 
-.form form input, .form textarea {
+form input, textarea {
     font-size: 1em;
     width: 450px;
     height: 30px;
@@ -478,11 +479,11 @@ img[data-src]:hover {
     background-color: #e5e5e5;
 }
 
-.form textarea {
+textarea {
     height: 250px;
 }
 
-.form form label {
+form label {
     /* font-size: 1.5em; */
     font-weight: 700;
     text-align: left;
@@ -497,7 +498,7 @@ label, textarea, select{
     text-align: left;
 }
 
-.form #submit {
+#submit {
     background-color: #14213d;
     color: white;
     cursor: pointer;
