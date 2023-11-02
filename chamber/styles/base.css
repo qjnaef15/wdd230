@@ -263,12 +263,6 @@ footer img {
     width: 25%;
 }
 
-#copyright {
-    /* line-height: .5em; */
-   /* font-size: .7em; */
-    align-self: top;
-}
-
 #copy {
     font-size: .7em;
     align-self: end;
@@ -336,7 +330,26 @@ footer a {
 .main-content {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
+}
+
+figure {
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+figcaption {
+    background: rgba(192, 192, 192, 0.295); /* Gray with transparency */
+    color: #7ac142; /* Text color */
+    padding: 10px;
 }
 
 img {
@@ -344,7 +357,7 @@ img {
 }
 
 /* Add a hover effect for the images */
-img[data-src]:hover {
+img[src]:hover {
     transform: scale(1.1); /* You can adjust the scale value for your desired zoom effect */
     transition: transform 0.3s ease; /* You can adjust the transition duration for the smooth effect */
 }
@@ -463,7 +476,6 @@ form {
     justify-content: center;
     align-items: center;
     margin: 50px auto;
-    color: black;
 }
 
 form input, textarea {
@@ -472,7 +484,7 @@ form input, textarea {
     height: 30px;
     padding: 10px;
     margin: 10px auto;
-    border: 2px solid black;
+    border: 2px solid #002a5c;
     border-radius: 10px;
     /* font-size: 1.5em; */
     font-weight: 500;
@@ -531,6 +543,10 @@ label, textarea, select{
 
 .thanks h1, .board h1 {
     display: block;
+}
+
+#back{
+    color: #7ac142;
 }
 
 .directory #content {
