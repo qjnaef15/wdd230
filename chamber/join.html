@@ -42,43 +42,82 @@
     </header>
 
     <main class="join">
-        <h1>Membership Form</h1>
 
-        <form action="thankyou.html" method="get">
-            <label for="firstName">Applicant's First Name: </label>
-            <input type="text" id="firstName" name="firstName" required>
+        <div class="perks">
+
+            <h1>Pasco Chamber Membership Perks and Pricing</h1>
+
+            <table id="perk">
+                <tr>
+                    <th>Membership Level</th>
+                    <th>Perks</th>
+                    <th>Pricing</th>
+                </tr>
+                <tr>
+                    <td>Free</td>
+                    <td>Access to basic events</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>Access to events and workshops</td>
+                    <td>$50/month</td>
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>Access to all events, workshops, and networking opportunities</td>
+                    <td>$100/month</td>
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>Priority access to all events, workshops, networking opportunities, and special promotions</td>
+                    <td>$200/month</td>
+                </tr>
+            </table>
+
+            <img id="member-image" src="images/membership.webp" alt="membership">
+
+        </div>
+        
+        <div class="member">
+            <h1>Membership Form</h1>
+
+            <form action="thankyou.html" method="get">
+                <label for="firstName">Applicant's First Name: </label>
+                <input type="text" id="firstName" name="firstName" required>
     
-            <label for="lastName">Applicant's Last Name: </label>
-            <input type="text" id="lastName" name="lastName" required>
+                <label for="lastName">Applicant's Last Name: </label>
+                <input type="text" id="lastName" name="lastName" required>
     
-            <label for="position">Applicant's Title or Position: </label>
-            <input type="text" id="position" name="position" pattern="[A-Za-z\- ]{7,}">
+                <label for="position">Applicant's Title or Position: </label>
+                <input type="text" id="position" name="position" pattern="[A-Za-z\- ]{7,}">
     
-            <label for="email">Email Address: </label>
-            <input type="email" id="email" name="email" required placeholder="example@example.com">
+                <label for="email">Email Address: </label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
     
-            <label for="phone">Mobile Phone Number: </label>
-            <input type="tel" id="phone" name="phone" required>
+                <label for="phone">Mobile Phone Number: </label>
+                <input type="tel" id="phone" name="phone" required>
     
-            <label for="organization">Business/Organization Name: </label>
-            <input type="text" id="organization" name="organization" required>
+                <label for="organization">Business/Organization Name: </label>
+                <input type="text" id="organization" name="organization" required>
     
-            <label for="membershipLevel">Membership Level: </label>
-            <select id="membershipLevel" name="membershipLevel">
-                <option value="NP">NP Membership (Free)</option>
-                <option value="Bronze">Bronze Membership</option>
-                <option value="Silver">Silver Membership</option>
-                <option value="Gold">Gold Membership</option>
-            </select>
+                <label for="membershipLevel">Membership Level: </label>
+                <select id="membershipLevel" name="membershipLevel">
+                    <option value="NP">NP Membership (Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
     
-            <label for="description">Business/Organization Description: </label>
-            <textarea id="description" name="description"></textarea>
+                <label for="description">Business/Organization Description: </label>
+                <textarea id="description" name="description"></textarea>
     
-            <input type="hidden" id="timestamp" name="timestamp" value="timestamp">
+                <input type="hidden" id="timestamp" name="timestamp" value="timestamp">
     
-            <input id="submit" type="submit" value="Submit Form">
-        </form>
-    
+                <input id="submit" type="submit" value="Submit Form">
+            </form>
+        </div>
+
     </main>
 
     <footer>

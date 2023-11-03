@@ -547,6 +547,24 @@ label, textarea, select{
     display: block;
 }
 
+.perks {
+    display: flex;
+    flex-direction: column;
+}
+
+#perk {
+    width: 800px;
+    align-self: center;
+}
+
+#member-image {
+    display: flex;
+    padding-top: 30px;
+    height: 400px;
+    width: 800px;
+    align-self: center;
+}
+
 #back{
     color: #7ac142;
 }
@@ -626,12 +644,14 @@ label, textarea, select{
 }
 
 tr:nth-child(odd) {
-    background-color: #e5e5e5;
+    background-color: #7ac142;
 }
 
 tr td {
     display: block;
 }
+
+
 
 #weather_top {
     display: grid;
