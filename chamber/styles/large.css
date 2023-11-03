@@ -231,6 +231,10 @@
         padding: 20px;
     }
 
+    .sidebar-content {
+        width: fit-content;
+    }
+
     .main-content {
         display: flex;
         gap: 20px;
