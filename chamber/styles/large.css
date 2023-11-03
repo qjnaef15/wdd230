@@ -251,5 +251,25 @@
         display: grid;
         grid-template-columns: repeat(7, 1fr);
         font-weight: bold;
-      }
+    }
+
+    .perks {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #perk {
+        width: 800px;
+        align-self: center;
+    }
+    
+    #member-image {
+        display: flex;
+        padding-top: 30px;
+        height: 400px;
+        width: 800px;
+        align-self: center;
+    }
+
+
 }

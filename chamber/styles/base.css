@@ -263,11 +263,14 @@ footer img {
     width: 25%;
 }
 
-
-
 #copy {
     font-size: .7em;
     align-self: end;
+}
+
+#socials {
+    display: flex;
+    flex-direction: row;
 }
 
 #dark-mode-toggle {
@@ -466,11 +469,10 @@ main .join {
     margin: 10px;
 }
 
-.join h1 {
+.join h1, h3 {
     display: block;
     text-align: center;
 }
-
 
 form {
     display: flex;
@@ -478,6 +480,7 @@ form {
     justify-content: center;
     align-items: center;
     margin: 50px auto;
+    width: fit-content;
 }
 
 form input, textarea {
@@ -548,21 +551,11 @@ label, textarea, select{
 }
 
 .perks {
-    display: flex;
-    flex-direction: column;
-}
-
-#perk {
-    width: 800px;
-    align-self: center;
+    display: none; 
 }
 
 #member-image {
-    display: flex;
-    padding-top: 30px;
-    height: 400px;
-    width: 800px;
-    align-self: center;
+    display: none;
 }
 
 #back{
