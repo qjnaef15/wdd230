@@ -263,6 +263,8 @@ footer img {
     width: 25%;
 }
 
+
+
 #copy {
     font-size: .7em;
     align-self: end;
@@ -347,8 +349,8 @@ img {
 }
 
 figcaption {
-    background: rgba(192, 192, 192, 0.295); /* Gray with transparency */
-    color: #7ac142; /* Text color */
+    background: rgba(219, 217, 217, 0.582); /* Gray with transparency */
+    color: #002a5c; /* Text color */
     padding: 10px;
 }
 
