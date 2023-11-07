@@ -1,0 +1,39 @@
+/* Reset some default styles */
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #002a5c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Style the main content area */
+  main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    color: black;
+  }
+  
+  /* Style the prophet cards */
+  section {
+    background-color: #e5e5e5af;
+    border: 1px solid #002a5c;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #002a5c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  

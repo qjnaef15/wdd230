@@ -209,6 +209,17 @@ footer {
         grid-template-columns: 500px 265px;
         gap: 25px; /* Increase the gap for full-screen size */
     }
+
+    #hamburger-menu {
+        display: none;
+    }
+}
+
+@media (min-width: 940px) {
+    #hamburger-menu {
+        display: none;
+    }
+
 }
 
 /* Hide menu items by default */
