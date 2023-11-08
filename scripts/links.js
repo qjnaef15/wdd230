@@ -14,16 +14,20 @@ function displayLinks(weeks) {
   weeks.lessons.forEach((week) => {
     const li = document.createElement("li"); // Create a list item for each week
 
-    const weekLabel = document.createElement("span");
-    weekLabel.textContent = `Week ${week.lesson}: `;
-
+    // Create a div to hold the lesson number and links within the same line
+    const lessonDiv = document.createElement("div");
+    
+    // Add the lesson number as text
+    const lessonLabel = document.createElement("span");
+    lessonLabel.textContent = `Lesson ${week.lesson}: `;
+    
     // Create a div to hold the links within the same line
     const linksDiv = document.createElement("div");
     week.links.forEach((link, index) => {
       const a = document.createElement("a"); // Create a link for the lesson
       a.href = isAbsoluteURL(link.url) ? link.url : new URL(link.url, baseURL).href; // Check if it's an absolute URL or relative
       a.textContent = link.title; // Set link text
-
+      
       linksDiv.appendChild(a); // Append the link to the div
       if (index < week.links.length - 1) {
         const separator = document.createElement("span");
@@ -31,9 +35,11 @@ function displayLinks(weeks) {
         linksDiv.appendChild(separator);
       }
     });
-
-    li.appendChild(weekLabel); // Add the week number as a label
-    li.appendChild(linksDiv); // Append the div containing links
+    
+    lessonDiv.appendChild(lessonLabel); // Add the lesson number as a label
+    lessonDiv.appendChild(linksDiv); // Append the div containing links
+    
+    li.appendChild(lessonDiv); // Append the div containing lesson number and links
     ul.appendChild(li); // Append the list item to the main ul
   });
 
