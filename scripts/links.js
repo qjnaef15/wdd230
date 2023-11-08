@@ -21,7 +21,7 @@ function displayLinks(weeks) {
     const linksDiv = document.createElement("div");
     week.links.forEach((link, index) => {
       const a = document.createElement("a"); // Create a link for the lesson
-      a.href = `${baseURL}${link.url}`; // Build the full URL
+      a.href = isAbsoluteURL(link.url) ? link.url : new URL(link.url, baseURL).href; // Check if it's an absolute URL or relative
       a.textContent = link.title; // Set link text
 
       linksDiv.appendChild(a); // Append the link to the div
@@ -41,6 +41,10 @@ function displayLinks(weeks) {
   const existingList = document.getElementById("activity-links");
   const parent = existingList.parentNode;
   parent.replaceChild(ul, existingList);
+}
+
+function isAbsoluteURL(url) {
+  return /^https?:\/\//i.test(url);
 }
 
 getLinks();
