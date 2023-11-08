@@ -8,38 +8,39 @@ async function getLinks() {
 }
 
 function displayLinks(weeks) {
-  const ul = document.createElement("ul"); // Create a new unordered list
-  ul.id = "activity-links"; // Give the list an ID for styling
+  const table = document.createElement("table"); // Create a new unordered list
+  table.id = "activity-links"; // Give the list an ID for styling
 
   weeks.lessons.forEach((week) => {
-    const li = document.createElement("li"); // Create a list item for each week
-
+    const tr = document.createElement("tr"); // Create a list item for each week
+    const td = document.createElement("td");
+    const ltd = document.createElement("td");
     const lessonLabel = document.createElement("span");
     lessonLabel.textContent = `Lesson ${week.lesson}: `;
 
-    const linksDiv = document.createElement("div");
+    td.appendChild(lessonLabel)
     week.links.forEach((link, index) => {
       const a = document.createElement("a"); // Create a link for the lesson
       a.href = isAbsoluteURL(link.url) ? link.url : new URL(link.url, baseURL).href; // Check if it's an absolute URL or relative
       a.textContent = link.title; // Set link text
       
-      linksDiv.appendChild(a); // Append the link to the div
+      ltd.appendChild(a); // Append the link to the div
       if (index < week.links.length - 1) {
         const separator = document.createElement("span");
         separator.textContent = " | "; // Add a separator between links
-        linksDiv.appendChild(separator);
+        ltd.appendChild(separator);
       }
     });
 
-    li.appendChild(lessonLabel); // Add the lesson title and number on the same line
-    li.appendChild(linksDiv); // Append the links
-    ul.appendChild(li); // Append the list item to the main ul
+    tr.appendChild(td); // Append the links
+    tr.appendChild(ltd);
+    table.appendChild(tr); // Append the list item to the main table
   });
 
   // Replace the static content with the dynamic list
   const existingList = document.getElementById("activity-links");
   const parent = existingList.parentNode;
-  parent.replaceChild(ul, existingList);
+  parent.replaceChild(table, existingList);
 }
 
 function isAbsoluteURL(url) {
