@@ -1,5 +1,5 @@
-const baseURL = "https://qjnaef15.github.io/wdd230/"; // Replace with your GitHub pages URL
-const linksURL = "https://qjnaef15.github.io/wdd230/data/links.json"; // Replace with the correct path to your links.json
+const baseURL = "https://qjnaef15.github.io/wdd230/"; 
+const linksURL = "https://qjnaef15.github.io/wdd230/data/links.json"; 
 
 async function getLinks() {
   const response = await fetch(linksURL);
@@ -14,14 +14,9 @@ function displayLinks(weeks) {
   weeks.lessons.forEach((week) => {
     const li = document.createElement("li"); // Create a list item for each week
 
-    // Create a div to hold the lesson number and links within the same line
-    const lessonDiv = document.createElement("div");
-    
-    // Add the lesson number as text
     const lessonLabel = document.createElement("span");
     lessonLabel.textContent = `Lesson ${week.lesson}: `;
-    
-    // Create a div to hold the links within the same line
+
     const linksDiv = document.createElement("div");
     week.links.forEach((link, index) => {
       const a = document.createElement("a"); // Create a link for the lesson
@@ -35,11 +30,9 @@ function displayLinks(weeks) {
         linksDiv.appendChild(separator);
       }
     });
-    
-    lessonDiv.appendChild(lessonLabel); // Add the lesson number as a label
-    lessonDiv.appendChild(linksDiv); // Append the div containing links
-    
-    li.appendChild(lessonDiv); // Append the div containing lesson number and links
+
+    li.appendChild(lessonLabel); // Add the lesson title and number on the same line
+    li.appendChild(linksDiv); // Append the links
     ul.appendChild(li); // Append the list item to the main ul
   });
 
