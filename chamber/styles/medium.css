@@ -130,8 +130,8 @@
         width: min-content;
     }
 
-    .perks {
-        display: none; /* Hide the perks table in medium view */
+    #perk {
+        display: none; /* Hide the perks 
     }
 
   }
