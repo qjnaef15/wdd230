@@ -469,7 +469,7 @@ main .join {
     margin: 10px;
 }
 
-.join h1, h3 {
+.join h1, h2 {
     display: block;
     text-align: center;
 }
@@ -485,7 +485,7 @@ form {
 
 form input, textarea {
     font-size: 1em;
-    width: 450px;
+    width: 350px;
     height: 30px;
     padding: 10px;
     margin: 10px auto;
@@ -511,7 +511,7 @@ label, textarea, select{
     display: inline-block;
     /* float: left; */
     clear: left;
-    width: 450px;
+    width: 350px;
     text-align: left;
 }
 
@@ -550,12 +550,8 @@ label, textarea, select{
     display: block;
 }
 
-.perks {
+#perk {
     display: none; 
-}
-
-#member-image {
-    display: none;
 }
 
 #back{
