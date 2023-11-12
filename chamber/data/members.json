@@ -1,0 +1,58 @@
+{
+    "members": [
+      {
+        "name": "Company 1",
+        "address": "123 Main St, City, Country",
+        "phone": "+123456789",
+        "website": "https://www.company1.com",
+        "image": "company1.jpg",
+        "membership": {
+          "level": "Free",
+          "perks": ["Access to basic events"],
+          "pricing": "Free"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 2",
+        "address": "456 Oak St, Town, Country",
+        "phone": "+987654321",
+        "website": "https://www.company2.com",
+        "image": "company2.jpg",
+        "membership": {
+          "level": "Bronze",
+          "perks": ["Access to events and workshops"],
+          "pricing": "$50/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 3",
+        "address": "789 Pine St, Village, Country",
+        "phone": "+111223344",
+        "website": "https://www.company3.com",
+        "image": "company3.jpg",
+        "membership": {
+          "level": "Silver",
+          "perks": ["Access to all events, workshops, and networking opportunities"],
+          "pricing": "$100/month"
+        },
+        "otherInfo": "Any additional information"
+      },
+      {
+        "name": "Company 4",
+        "address": "101 Maple St, Hamlet, Country",
+        "phone": "+445566778",
+        "website": "https://www.company4.com",
+        "image": "company4.jpg",
+        "membership": {
+          "level": "Gold",
+          "perks": ["Priority access to all events, workshops, networking opportunities, and special promotions"],
+          "pricing": "$200/month"
+        },
+        "otherInfo": "Any additional information"
+      }
+
+    ]
+  }
+  

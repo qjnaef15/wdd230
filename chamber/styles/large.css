@@ -56,10 +56,6 @@
   
   
     /* MAIN */
-    main {
-        background-color: white;
-        margin: auto;
-    }
   
     .home {
         display: grid;
@@ -262,14 +258,5 @@
         width: 800px;
         align-self: center;
     }
-    
-    #member-image {
-        display: flex;
-        padding-top: 30px;
-        height: 400px;
-        width: 800px;
-        align-self: center;
-    }
-
 
 }

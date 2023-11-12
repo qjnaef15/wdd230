@@ -131,7 +131,13 @@
     }
 
     #perk {
-        display: none; /* Hide the perks 
+        display: none; 
     }
 
-  }
+    /* Grid view styles */
+.grid-view {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+    
+}

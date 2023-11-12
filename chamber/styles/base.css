@@ -563,12 +563,90 @@ label, textarea, select{
     margin: 0 auto;
 }
 
+/* Add these styles to your existing CSS file */
+
+/* Updated CSS to include table view */
+/* Default card styles */
+.card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Grid view styles */
+@media screen and (min-width: 1200px) {
+    .grid-view {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .grid-view {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+    }
+}
+
+/* Table view styles */
+.table-view table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-view th, .table-view td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Hide image in list view and table view */
+.list-view .card img,
+.table-view .card img {
+    display: none;
+}
+
+/* Display information in one line for list view */
+.list-view .card,
+.table-view .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.list-view .card > *,
+.table-view .card > * {
+    flex: 0 0 48%; /* Adjust as needed */
+    margin: 5px;
+    box-sizing: border-box;
+}
+
+
+/* Button styles */
+button {
+    margin: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Dark mode button */
+#dark-mode-toggle {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* Add more styles as needed */
+
+
 .cards {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
 }
+
 .cards section {
     border: 2px solid #14213d;
     background-color: white;
