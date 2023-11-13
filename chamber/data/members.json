@@ -5,7 +5,7 @@
         "address": "123 Main St, City, Country",
         "phone": "+123456789",
         "website": "https://www.company1.com",
-        "image": "/images/comp1.svg",
+        "image": "images/comp1.svg",
         "membership": {
           "level": "Free",
           "perks": ["Access to basic events"],
