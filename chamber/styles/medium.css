@@ -138,6 +138,8 @@
 .grid-view {
     display: grid;
     grid-template-columns: 33% 33% 33%;
+    background-color: #fff;
+    color: #002a5c;
 }
     
 }
