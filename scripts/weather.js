@@ -52,7 +52,7 @@ apiFetch();
 function displayResults(data) {
   currentTemp.innerHTML = `${data.main.temp}&deg;F`;
   const iconCode = data.weather[0].icon;
-  const iconSrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+  const iconSrc = `https://openweathermap.org/img/wn/${iconCode}.png`;
   const desc = data.weather[0].description;
   weatherIcon.setAttribute('src', iconSrc);
   weatherIcon.setAttribute('alt', desc);

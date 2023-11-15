@@ -173,14 +173,13 @@ figure {
     display: flex;
 }
 
-#current-temp {
-    margin-right: 10px;
-}
-
 #weather-icon {
-    width: 40px;
+    width: auto;
     height: auto;
-}
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+} 
 
 .label {
 	font-weight: 700;
