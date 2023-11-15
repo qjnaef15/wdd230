@@ -163,9 +163,23 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     text-align: center;
     padding: 30px;
     line-height: 2;
+}
+
+figure {
+    display: flex;
+}
+
+#current-temp {
+    margin-right: 10px;
+}
+
+#weather-icon {
+    width: 40px;
+    height: auto;
 }
 
 .label {
