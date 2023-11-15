@@ -1,4 +1,4 @@
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5809844&appid=4e2177ee75d0475bee028ead2270af2d'
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?id=5806298&appid=493485c1b041185d95a0b516f6a6a100'
 
 const getWeather = async () => {
     const response = await fetch(apiURL);
@@ -32,7 +32,7 @@ const windchill = (temp, wind) => {
 
     windchill.textContent = 'N/A';
 
-    if (temp <= 50 && wind >= 3) {
+    if (temp < 50 && wind >= 3) {
         let chill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(wind,0.16)) + (0.4275*temp*Math.pow(wind,0.16)));
         windchill.textContent = chill.toFixed(0);
         windDegree.innerHTML = '&#8457;';
