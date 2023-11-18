@@ -86,6 +86,7 @@
     #weather {
         grid-column: 1;
         grid-row: 2;
+        height: 420px;
     }
   
     #weather_top {
@@ -96,6 +97,8 @@
     #join {
         grid-column: 1;
         grid-row: 3;
+        height: 270px;
+        margin-top: 80px;
     }
   
     #news {

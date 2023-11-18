@@ -13,6 +13,11 @@
     top: 0px;
     z-index: 10;
     background: #7ac142;
+    display: none; /* Initially hide the banner */
+}
+
+.banner.show {
+    display: flex; /* Show the banner when the 'show' class is present */
 }
 
 .banner-content {
@@ -47,6 +52,7 @@
 .banner-button > span:hover {
     color: #002a5c;
 }
+
 
 /* HEADER */
 header {
@@ -352,10 +358,40 @@ img {
     display: block;
 }
 
+/* Add this to your CSS */
+.current-weather {
+    text-align: center;
+}
+
+.current-weather img {
+    width: 40px; /* Adjust the size as needed */
+    margin-bottom: 5px; /* Add some spacing between the icon and text */
+}
+
+.current-weather p {
+    font-size: 12px; /* Adjust the font size as needed */
+}
+
+
 figcaption {
     background: rgba(219, 217, 217, 0.582); /* Gray with transparency */
     color: #002a5c; /* Text color */
-    padding: 10px;
+}
+
+.forecast-item {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    background-color: #e5e5e5;
+    height: 40px;
+}
+
+.day {
+    font-weight: bold;
+}
+
+.temperature {
+    margin-top: 5px;
 }
 
 img {
@@ -720,8 +756,6 @@ tr:nth-child(odd) {
 tr td {
     display: block;
 }
-
-
 
 #weather_top {
     display: grid;

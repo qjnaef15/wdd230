@@ -45,7 +45,7 @@
     #weather {
         grid-column: 1;
         grid-row: 4;
-        /* overflow: scroll; */
+        overflow: scroll;
     }
   
     #weather_top {
