@@ -127,8 +127,13 @@ nav a:hover {
     width: 24px;
 }
 
+#address {
+    display: flex;
+    justify-content: center;
+}
+
 .socials {
-    display: block;
+    display: flex;
     grid-row: 2;
     grid-column: 1/3;
     margin: auto;
