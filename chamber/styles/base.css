@@ -106,6 +106,17 @@ nav a:hover {
     color: white;
 }
 
+.arrow {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 16px;
+  }
+
+  .current-page {
+    border-bottom: 2px solid #fff; /* Add an underline for the current page */
+    padding-bottom: 2px;
+  }
+
 #hamburger {
     color: #e5e5e5;
     text-decoration: none;
@@ -381,6 +392,7 @@ img {
 figcaption {
     background: rgba(219, 217, 217, 0.582); /* Gray with transparency */
     color: #002a5c; /* Text color */
+    font-size: 20px;
 }
 
 .forecast-item {
@@ -682,7 +694,16 @@ button {
 }
 
 /* Add more styles as needed */
+#view {
+    display: flex;
+    justify-content: center;
+}
 
+#view button{
+    background-color: #002a5c;
+    color: #7ac142;
+    font-weight: bold;
+}
 
 .cards {
     display: flex;
