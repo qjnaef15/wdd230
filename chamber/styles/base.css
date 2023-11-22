@@ -425,6 +425,29 @@ img[src]:hover {
     font-weight: bold;
 }
 
+.discover-title {
+    text-align: center;
+    font-weight: bold;
+    color: #002a5c;
+    background-color: #7ac142;
+    padding: 8px;
+}
+
+.directory-title {
+    text-align: center;
+    font-weight: bold;
+    color: #002a5c;
+    background-color: #7ac142;
+    padding: 8px;
+}
+
+.join-title {
+    text-align: center;
+    font-weight: bold;
+    color: #002a5c;
+    background-color: #7ac142;
+    padding: 8px;
+}
 
 .demographics li {
     text-align: left;
