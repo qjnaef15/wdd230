@@ -209,6 +209,10 @@ main section,  main section div {
     font-weight: 700;
 }
 
+#event {
+    text-align: left;
+}
+
 #spotlights {
     height: 100%;
 }
