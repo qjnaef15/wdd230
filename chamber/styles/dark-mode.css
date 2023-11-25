@@ -8,6 +8,10 @@ body.dark-mode {
     background-color: #333;
 }
 
+.dark-mode main section div {
+    background-color: #222;
+}
+
 /* Example: Change the background color for specific elements */
 .dark-mode #hero {
     background-color: #222; /* Change the hero section background color */
@@ -31,6 +35,10 @@ body.dark-mode {
 
 .dark-mode #spotlights {
     background-color: #222; /* Change the spotlights section background color */
+}
+
+.darkmode.spotlight-item p {
+    background-color: #222;
 }
 
 .dark-mode #spotlights a {

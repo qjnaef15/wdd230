@@ -214,14 +214,16 @@ main section,  main section div {
     text-align: left;
 }
 
-#spotlights {
-    height: 100%;
+#spotlights img {
+    height: 180px;
+    width: 300px;
+
 }
 
 #spot1 img, #spot2 img, #spot3 img {
     /* filter: brightness(.5); */
-    height: 100%;
-    width: 100%;
+    height: 180px;
+    width: 300px;
     object-fit: cover;
     /* position: relative; */
 }
