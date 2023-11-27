@@ -214,11 +214,12 @@ main section,  main section div {
     text-align: left;
 }
 
-#spotlights img {
-    height: 180px;
-    width: 300px;
-
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 #spot1 img, #spot2 img, #spot3 img {
     /* filter: brightness(.5); */
@@ -379,7 +380,6 @@ img {
     width: 100%;
     max-width: 300px;
     height: auto;
-    display: block;
 }
 
 /* Add this to your CSS */
