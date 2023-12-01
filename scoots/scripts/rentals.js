@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const reservationTableBody = document.getElementById("reservationTableBody");
     const walkInTableBody = document.getElementById("walkInTableBody");
   
-    fetch('path/to/your/json/file.json')
+    fetch('data/rentals.json')
       .then(response => response.json())
       .then(data => {
         data.rentalPrices.forEach(rental => {
