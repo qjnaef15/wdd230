@@ -232,6 +232,7 @@ main {
   .price-table table {
     width: 100%;
     border-collapse: collapse;
+    margin-bottom: 20px;
   }
 
   .price-table th, .price-table td {
