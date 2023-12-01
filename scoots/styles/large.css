@@ -225,6 +225,10 @@ main {
 }
 
 /* Rental Page Styles */
+.rentals main {
+    background-color: var(--mint-green);
+}
+
 .price-table {
     margin-top: 20px;
   }
@@ -242,7 +246,7 @@ main {
   }
 
   .price-table th {
-    background-color: #f2f2f2;
+    background-color: var(--light-red);
   }
 
   .table-label {
@@ -255,7 +259,16 @@ main {
     font-weight: bold;
   }
 
+  .price-table tr:nth-child(even) {
+    background-color: var(--turquoise); /* Light gray background for even rows */
+  }
   
+  .price-table tr:nth-child(odd) {
+    background-color: var(--ucla-blue); /* White background for odd rows */
+  }
+  
+
+
 
 /* Footer */
 footer {
