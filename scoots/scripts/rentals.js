@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const reservationTableBody = document.getElementById("reservationTableBody");
     const walkInTableBody = document.getElementById("walkInTableBody");
 
-    fetch('data/rentals.json')
+    fetch('path/to/your/json/file.json')
       .then(response => response.json())
       .then(data => {
         data.rentalPrices.forEach(rental => {
@@ -10,8 +10,12 @@ document.addEventListener("DOMContentLoaded", function () {
           reservationRow.innerHTML = `
             <td>${rental.rentalType}</td>
             <td>${rental.maxPersons}</td>
-            <td>${rental.reservation.halfDay}</td>
-            <td>${rental.reservation.fullDay}</td>
+            <td>
+              <div>${rental.reservation.halfDay}</div>
+            </td>
+            <td>
+              <div>${rental.reservation.fullDay}</div>
+            </td>
           `;
           reservationTableBody.appendChild(reservationRow);
 
@@ -19,8 +23,12 @@ document.addEventListener("DOMContentLoaded", function () {
           walkInRow.innerHTML = `
             <td>${rental.rentalType}</td>
             <td>${rental.maxPersons}</td>
-            <td>${rental.walkIn.halfDay}</td>
-            <td>${rental.walkIn.fullDay}</td>
+            <td>
+              <div>${rental.walkIn.halfDay}</div>
+            </td>
+            <td>
+              <div>${rental.walkIn.fullDay}</div>
+            </td>
           `;
           walkInTableBody.appendChild(walkInRow);
         });
