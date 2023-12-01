@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const reservationTableBody = document.getElementById("reservationTableBody");
     const walkInTableBody = document.getElementById("walkInTableBody");
-
+  
     fetch('path/to/your/json/file.json')
       .then(response => response.json())
       .then(data => {
@@ -11,23 +11,23 @@ document.addEventListener("DOMContentLoaded", function () {
             <td>${rental.rentalType}</td>
             <td>${rental.maxPersons}</td>
             <td>
-              <div>${rental.reservation.halfDay}</div>
+              <div>${rental.reservation ? rental.reservation.halfDay : ''}</div>
             </td>
             <td>
-              <div>${rental.reservation.fullDay}</div>
+              <div>${rental.reservation ? rental.reservation.fullDay : ''}</div>
             </td>
           `;
           reservationTableBody.appendChild(reservationRow);
-
+  
           const walkInRow = document.createElement("tr");
           walkInRow.innerHTML = `
             <td>${rental.rentalType}</td>
             <td>${rental.maxPersons}</td>
             <td>
-              <div>${rental.walkIn.halfDay}</div>
+              <div>${rental.walkIn ? rental.walkIn.halfDay : ''}</div>
             </td>
             <td>
-              <div>${rental.walkIn.fullDay}</div>
+              <div>${rental.walkIn ? rental.walkIn.fullDay : ''}</div>
             </td>
           `;
           walkInTableBody.appendChild(walkInRow);
@@ -35,3 +35,4 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch(error => console.error('Error fetching JSON:', error));
   });
+  
