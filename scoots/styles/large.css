@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins&display=swap');
+
+/* CSS HEX */
+:root {
+    --mint-green: #d6fff6ff;
+    --russian-violet: #231651ff;
+    --turquoise: #4dccbdff;
+    --ucla-blue: #2374abff;
+    --light-red: #ff8484ff;
+}
+  
+  /* CSS HSL */
+:root {
+    --mint-green: hsla(167, 100%, 92%, 1);
+    --russian-violet: hsla(253, 57%, 20%, 1);
+    --turquoise: hsla(173, 55%, 55%, 1);
+    --ucla-blue: hsla(204, 66%, 40%, 1);
+    --light-red: hsla(0, 100%, 76%, 1);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Header */
+header {
+    background-color: var(--russian-violet);
+    color: var(--light-red);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#hamburger {
+    color: var(--light-red);
+    text-decoration: none;
+    font-size: 2.25em;
+    margin-left: 10px;
+    display: none;
+}
+
+nav {
+    margin: 0; 
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none; 
+}
+
+nav a {
+    color: var(--light-red);
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px; 
+    margin: 0 10px; 
+}
+
+nav ul li a:hover {
+    color: var(--mint-green); /* Change the hover background color as needed */
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo img {
+    /* Style logo */
+    width: 175px;
+    height: 175px;
+    margin-right: 10px; 
+}
+
+
+/* Main - Home */
+main {
+    /* Style main content */
+    background-color: var(--mint-green);
+}
+
+/* Add this to your CSS file */
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+}
+
+@media screen and (max-width: 1550px) {
+    .hero img {
+        width: 1515px;
+    }
+}
+
+.cta-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the CTA Button */
+.cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    background-color: var(--light-red);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+    background-color: var(--russian-violet);
+}
+
+/* Home Page Styles */
+/* Summary Section Styles */
+.summary {
+    background-color: var(--mint-green);
+    padding: 40px 0;
+}
+
+.summary-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.summary h2 {
+    color: var(--ucla-blue);
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.summary p {
+    color: var(--russian-violet);
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.summary li {
+    color:var(--russian-violet);
+    text-align: left;
+}
+
+.weather-map-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#weather, .map {
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    background-color: var(--ucla-blue); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin: 10px; 
+    text-align: center;
+}
+
+#weather, .map h2{
+    color: ghostwhite;
+}
+
+#current-weather {
+    margin-bottom: 20px;
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    background-size: cover;
+}
+
+#temperature {
+    font-size: 2em;
+    margin: 0;
+}
+
+#description {
+    color: ghostwhite;
+}
+
+#three-day-forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.forecast-item {
+    background-color: var(--light-red);
+    color: var(--russian-violet);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.day {
+    font-weight: bold;
+}
+
+.temperature {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Rental Page Styles */
+.price-table {
+    margin-top: 20px;
+  }
+
+  .price-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .price-table th, .price-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+
+  .price-table th {
+    background-color: #f2f2f2;
+  }
+
+
+
+/* Footer */
+footer {
+    background-color: var(--russian-violet);
+    color: var(--light-red);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    gap: 25px;
+}
+
+.social-media a img {
+    width: 40px; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+}
+
+address {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#copyright h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#copyright p {
+    margin: 5px 0;
+    font-size: 1em;
+}

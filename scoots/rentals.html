@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Welcome to Pasco Chamber of Commerce">
+    <meta name="author" content="Quentin Naef">
+    <meta property="og:title" content="~ Scoots ~ Rental Company - Quentin Naef">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ytimg.com/vi/df8RwLalT-0/maxresdefault.jpg">
+    <meta property="og:url" content="https://scootsrentalsofcozumel.com">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/medium.css"/>
+    <link rel="stylesheet" href="styles/mobile.css"/>
+    <link rel="stylesheet" href="styles/normalize.css"/>
+    <title>Scoots Rentals</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navigation and Logo -->
+      <a href="#" id="hamburger">&#9776;</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#Rentals">Rentals</a></li>
+          <li><a href="#Reservations">Reservations</a></li>
+          <li><a href="#Contact Us">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="logo">
+        <h1>~ Scoots ~</h1>
+        <a href="index.html"
+          ><img src="images/scoot-logo.webp" alt="Scoots Logo"
+        /></a>
+      </div>
+    </header>
+
+    <main class="rentals">
+      
+        <section class="price-table">
+        <table>
+            <thead>
+              <tr>
+                <th>Rental Type</th>
+                <th>Max Persons</th>
+                <th>Reservation - Half Day</th>
+                <th>Reservation - Full Day</th>
+                <th>Walk-In - Half Day</th>
+                <th>Walk-In - Full Day</th>
+              </tr>
+            </thead>
+            <tbody id="rentalTableBody">
+            </tbody>
+          </table>
+        </section>
+
+    </main>
+
+    <footer>
+      <!-- Social Media Links -->
+      <div class="social-media">
+        <a href="#" target="_blank"
+          ><img src="images/facebook.svg" alt="Facebook"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="images/insta.svg" alt="Instagram"
+        /></a>
+        <a href="#" target="_blank"
+          ><img src="images/twitter.svg" alt="Twitter"
+        /></a>
+      </div>
+
+      <!-- Contact Information -->
+      <address>
+        123 Ocean View Street<br />
+        San Miguel de Cozumel<br />
+        77600 Quintana Roo<br />
+        Mexico
+      </address>
+
+      <!-- Copyright Info-->
+      <div id="copyright">
+        <h4>~ Scoots ~</h4>
+        <p>
+          &copy; <span id="currentYear"></span> | Quentin Naef | Washington
+          State
+        </p>
+        <p><span id="lastModified"></span></p>
+      </div>
+    </footer>
+    <script src="scripts/responsive.js"></script>
+    <script src="scripts/rentals.js"></script>
+  </body>
+</html>
