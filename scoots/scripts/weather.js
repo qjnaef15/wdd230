@@ -2,68 +2,64 @@ const kelvinToFahrenheit = (kelvin) => ((kelvin - 273.15) * 1.8 + 32).toFixed(0)
 
 const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&appid=493485c1b041185d95a0b516f6a6a100';
 
-const getWeatherAndForecast = async () => {
-    const response = await fetch(apiURL);
-    const weatherData = await response.json();
+const displayWeatherAlerts = async () => {
+    const alertsResponse = await fetch(`${apiURL}&exclude=current,minutely,hourly,daily&alerts=true`);
+    const alertsData = await alertsResponse.json();
 
-    displayCurrentWeather(weatherData.list[0]);
-    displayThreeDayForecast(weatherData.list);
+    if (alertsData.alerts && alertsData.alerts.length > 0) {
+        const alertsContainer = document.getElementById('alerts');
+        alertsContainer.textContent = alertsData.alerts[0].event;
+        alertsContainer.style.display = 'block';
+    }
 };
 
 const displayCurrentWeather = (currentData) => {
     const temperature = kelvinToFahrenheit(currentData.main.temp);
     const icon = currentData.weather[0].icon;
     const description = currentData.weather[0].description.toUpperCase();
+    const humidity = `Humidity: ${currentData.main.humidity}%`;
 
     document.getElementById('weather-icon').style.backgroundImage = `url('https://openweathermap.org/img/w/${icon}.png')`;
     document.getElementById('temperature').textContent = `${temperature}°F`;
     document.getElementById('description').textContent = description;
+    document.getElementById('humidity').textContent = humidity;
 };
 
-const displayThreeDayForecast = (forecastList) => {
-    const dailyForecast = groupByDay(forecastList);
+const displayTomorrowForecast = (forecastList) => {
+    const tomorrowDate = new Date();
+    tomorrowDate.setDate(tomorrowDate.getDate() + 1);
 
-    for (const [day, temperatures] of Object.entries(dailyForecast)) {
-        const averageTemperature = calculateAverageTemperature(temperatures);
+    const filteredForecast = forecastList.filter(forecast => {
+        const forecastDate = new Date(forecast.dt_txt);
+        return forecastDate.getDate() === tomorrowDate.getDate();
+    });
 
+    if (filteredForecast.length > 0) {
         const forecastContainer = document.createElement('div');
         forecastContainer.classList.add('forecast-item');
 
         const dayElement = document.createElement('p');
         dayElement.classList.add('day');
-        dayElement.textContent = day;
+        dayElement.textContent = 'Tomorrow';
 
         const temperatureElement = document.createElement('p');
         temperatureElement.classList.add('temperature');
-        temperatureElement.textContent = `${averageTemperature}°F`;
+        temperatureElement.textContent = `${kelvinToFahrenheit(filteredForecast[0].main.temp)}°F`;
 
         forecastContainer.appendChild(dayElement);
         forecastContainer.appendChild(temperatureElement);
 
-        document.getElementById('three-day-forecast').appendChild(forecastContainer);
+        document.getElementById('one-day-forecast').appendChild(forecastContainer);
     }
 };
 
-const groupByDay = (forecastList) => {
-    const dailyForecast = {};
+const getWeatherAndForecast = async () => {
+    await displayWeatherAlerts();
+    const response = await fetch(apiURL);
+    const weatherData = await response.json();
 
-    forecastList.forEach((forecast) => {
-        const timestamp = new Date(forecast.dt_txt);
-        const day = new Intl.DateTimeFormat('en-US', { weekday: 'short' }).format(timestamp);
-
-        if (!dailyForecast[day]) {
-            dailyForecast[day] = [];
-        }
-
-        dailyForecast[day].push(kelvinToFahrenheit(forecast.main.temp));
-    });
-
-    return dailyForecast;
-};
-
-const calculateAverageTemperature = (temperatures) => {
-    const sum = temperatures.reduce((acc, temperature) => acc + parseInt(temperature), 0);
-    return Math.round(sum / temperatures.length);
+    displayCurrentWeather(weatherData.list[0]);
+    displayTomorrowForecast(weatherData.list); 
 };
 
 getWeatherAndForecast();

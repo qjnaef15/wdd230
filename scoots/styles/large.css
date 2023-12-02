@@ -181,47 +181,40 @@ main {
     color: ghostwhite;
 }
 
-#current-weather {
-    margin-bottom: 20px;
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#weather-icon {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 10px;
-    background-size: cover;
+#alerts {
+    background-color: var(--light-blue); 
+    color: var(--dark-blue); 
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+#one-day-forecast {
+    margin-top: 40px; 
 }
 
 #temperature {
-    font-size: 2em;
-    margin: 0;
-}
-
-#description {
-    color: ghostwhite;
-}
-
-#three-day-forecast {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 80px;
-}
-
-.forecast-item {
     background-color: var(--light-red);
-    color: var(--russian-violet);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--russian-violet);
+    width: auto;
+}
+
+#one-day-forecast .forecast-item {
+    background-color: var(--light-red);
+    color: ghostwhite;
     border-radius: 5px;
     padding: 10px;
+    box-shadow: 0 0 10px var(--russian-violet);
     text-align: center;
-}
-
-.day {
-    font-weight: bold;
-}
-
-.temperature {
-    margin: 5px 0 0;
-    font-size: 1.2em;
+    width: auto;
 }
 
 /* Rental Page Styles */
