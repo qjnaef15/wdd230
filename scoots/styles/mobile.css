@@ -2,40 +2,40 @@
   header {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr .5fr auto;
+    grid-template-rows: 1fr 0.5fr auto;
     gap: 0px 0px;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
   }
 
   .logo {
-    grid-row: 1; 
+    grid-row: 1;
     text-align: center;
     justify-content: center;
   }
-  
+
   #hamburger {
-    grid-row: 2; 
+    grid-row: 2;
     display: block;
     font-size: 3.25em;
     cursor: pointer;
     text-align: center;
   }
-  
+
   nav {
-    grid-row: 3; 
+    grid-row: 3;
     text-align: center;
   }
 
   nav ul {
     display: none;
-    flex-direction: column; 
+    flex-direction: column;
     list-style: none;
     padding: 0;
   }
 
   nav li {
-    margin-bottom: 30px; 
+    margin-bottom: 30px;
     font-size: 1em;
   }
 
@@ -72,5 +72,30 @@
 
   .map iframe {
     width: fit-content;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .location-1 {
+    order: -2;
+  }
+
+  .map-left {
+    order: -1;
+  }
+
+  .location-2 {
+    order: 0;
+  }
+
+  .map-right {
+    order: 1;
+  }
+
+  .contact-form {
+    grid-column: span 1;
+    max-width: 500px;
   }
 }
