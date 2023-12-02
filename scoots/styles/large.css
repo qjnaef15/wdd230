@@ -291,7 +291,7 @@ main {
   }
 
   .price-table th, .price-table td {
-    border: 1px solid #ddd;
+    border: 1px solid var(--russian-violet);
     padding: 8px;
     text-align: left;
   }
