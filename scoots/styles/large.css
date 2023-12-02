@@ -13,7 +13,7 @@
 :root {
     --mint-green: hsla(167, 100%, 92%, 1);
     --russian-violet: hsla(253, 57%, 20%, 1);
-    --turquoise: hsla(173, 55%, 55%, 1);
+    --turquoise-grad: rgb(203, 251, 245);
     --ucla-blue: hsla(204, 66%, 40%, 1);
     --light-red: hsla(0, 100%, 76%, 1);
 }
@@ -260,11 +260,11 @@ main {
   }
 
   .price-table tr:nth-child(even) {
-    background-color: var(--turquoise); /* Light gray background for even rows */
+    background-color: var(--turquoise-grad); /* Light gray background for even rows */
   }
   
   .price-table tr:nth-child(odd) {
-    background-color: var(--ucla-blue); /* White background for odd rows */
+    background-color: var(--turquoise); /* White background for odd rows */
   }
   
 
