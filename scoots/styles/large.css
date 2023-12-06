@@ -11,7 +11,7 @@
 
 /* CSS HSL */
 :root {
-  --mint-green: hsla(167, 100%, 92%, 1);
+  --mint-green-grad: rgb(194, 232, 223);
   --russian-violet-grad: rgb(17, 11, 41);
   --turquoise-grad: rgb(50, 131, 121);
   --ucla-blue-grad: rgb(24, 76, 111);
@@ -393,7 +393,7 @@ nav ul li a:hover {
 }
 
 .price-table tr:nth-child(odd) {
-  background-color: var(--turquoise-grad); 
+  background-color: var(--mint-green-grad); 
 }
 
 /* Reservation Page Styles */
