@@ -425,12 +425,21 @@ main.reservations {
   min-height: 100vh;
 }
 
+.reservations {
+  background-image: url('C:/Users/qjnae/OneDrive/Documents/wdd230/scoots/images/diving.webp'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the last value for transparency */
+  padding: 20px; /* Adjust padding as needed */
+}
+
 .reservation-form {
   background-color: var(--mint-green);
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 10px var(--russian-violet);
-  max-width: 500px;
+  box-shadow: 0 0 10px var(--light-red);
+  max-width: 700px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -479,8 +488,9 @@ button:hover {
 }
 
 #agreement-checkbox {
-  margin-right: 10px;
+  margin-right: -10px;
   transform: scale(1.5);
+  width: 100px;
 }
 
 #agreement-label {
