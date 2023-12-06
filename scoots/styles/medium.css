@@ -9,6 +9,10 @@
     margin: 0 10px;
   }
 
+  .logo {
+    padding-right: 0;
+  }
+
   .logo h1 {
     display: none;
   }
