@@ -11,18 +11,17 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentImageIndex = 0;
 
   function changeImage() {
-    slideshowImg.style.opacity = 0; // Set opacity to 0 for a fade-out effect
+    slideshowImg.style.opacity = 0; 
 
     setTimeout(function () {
       slideshowImg.src = images[currentImageIndex];
-      slideshowImg.style.opacity = 1; // Set opacity to 1 for a fade-in effect
+      slideshowImg.style.opacity = 1; 
       currentImageIndex = (currentImageIndex + 1) % images.length;
-    }, 700); // Adjust the delay to match the CSS transition duration
+    }, 700); 
   }
 
-  // Change image every 3 seconds (adjust as needed)
+  // Change image every 3 seconds
   setInterval(changeImage, 3000);
 
-  // Initial image load
   changeImage();
 });
