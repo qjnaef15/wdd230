@@ -426,7 +426,7 @@ main.reservations {
 }
 
 .reservations {
-  background-image: url('C:/Users/qjnae/OneDrive/Documents/wdd230/scoots/images/diving.webp'); /* Replace with your image path */
+  background-image: url('scoots/images/diving.webp'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
