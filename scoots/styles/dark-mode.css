@@ -1,0 +1,119 @@
+:root {
+    --mint-green: #d6fff6ff;
+    --russian-violet-grad: rgb(17, 11, 41);
+    --russian-violet: #231651ff;
+    --turquoise: #4dccbdff;
+    --turquoise-grad: rgb(50, 131, 121);
+    --ucla-blue: #2374abff;
+    --ucla-blue-grad: rgb(24, 76, 111);
+    --light-red: #ff8484ff;
+    --light-red-grad: rgb(223, 116, 116);
+  }
+
+.dark-mode {
+    background-color: var(--russian-violet);
+}
+
+.dark-mode .home {
+    background-color: var(--russian-violet-grad);
+    color: var(--light-red);
+    transition: background-color 0.5s ease, color 0.5s ease; /* Add transition property here */
+  }
+
+.dark-mode .summary {
+    background-color: var(--russian-violet-grad);
+}
+
+.dark-mode .summary h2 {
+    color: var(--turquoise);
+}
+
+.dark-mode .summary p {
+    color: var(--mint-green);
+}
+
+.dark-mode .summary li {
+    color: var(--mint-green);
+}
+
+.dark-mode #weather,
+.dark-mode .map { 
+    background-color: var(--ucla-blue-grad);
+}
+
+.dark-mode .rentals {
+    background-color: var(--russian-violet-grad);
+}
+
+.dark-mode .preface-info {
+    background-color: var(--turquoise-grad);
+    box-shadow: 0 0 20px var(--light-red);
+}
+
+.dark-mode .rental-item {
+    box-shadow: 0 0 10px var(--mint-green);
+}
+
+.dark-mode .rental-item img {
+    border-bottom: 2px solid var(--turquoise);
+}
+
+.dark-mode .price-table .table-label {
+    color: var(--mint-green);
+}
+
+.dark-mode .price-table th,
+.dark-mode .price-table td {
+    border: 1px solid var(--mint-green);
+}
+
+.dark-mode .prices {
+    color: var(--russian-violet-grad);
+}
+
+.dark-mode .reservations {
+    background-color: var(--russian-violet-grad);
+}
+
+.dark-mode .reservation-form {
+    background-color: var(--russian-violet-grad);
+    box-shadow: 0 0 10px var(--mint-green);
+}
+
+.dark-mode .reservation-form h2 {
+    color: var(--turquoise);
+}
+
+.dark-mode .reservation-form label {
+    color: var(--turquoise);
+}
+
+.dark-mode .reservation-form p {
+    color: var(--turquoise);
+}
+
+.dark-mode .reservation-form li {
+    color: var(--mint-green);
+}
+
+.dark-mode .contact {
+    background-color: var(--russian-violet-grad);
+}
+
+.dark-mode .contact-form {
+    background-color: var(--light-red-grad);
+    box-shadow: 0 0 10px var(--mint-green);
+}
+
+.dark-mode .info section {
+    background-color: var(--turquoise-grad);
+    box-shadow: 0 4px 8px var(--mint-green);
+}
+
+.dark-mode .info h2 {
+    color: var(--mint-green);
+}
+
+.dark-mode .info address {
+    color: ghostwhite;
+}

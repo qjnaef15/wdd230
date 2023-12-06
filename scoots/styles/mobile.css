@@ -1,5 +1,5 @@
 @media screen and (max-width: 430px) {
-  header {
+  .menu {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr auto;

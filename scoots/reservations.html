@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Pasco Chamber of Commerce" />
+    <meta name="description" content="Scoots of Cozumel - Reservations" />
     <meta name="author" content="Quentin Naef" />
     <meta
       property="og:title"
@@ -20,25 +20,37 @@
     <link rel="stylesheet" href="styles/medium.css" />
     <link rel="stylesheet" href="styles/mobile.css" />
     <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/dark-mode.css" />
+    <script src="scripts/dark-mode.js"></script>
     <title>Scoots Rentals</title>
   </head>
-  <body>
+  <body class="light-mode">
     <header>
       <!-- Navigation and Logo -->
-      <a href="#" id="hamburger">&#9776;</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rentals.html">Rentals</a></li>
-          <li><a href="reservations.html">Reservations</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <h1>~ Scoots ~</h1>
-        <a href="index.html"
-          ><img src="images/scoot-logo.webp" alt="Scoots Logo"
-        /></a>
+      <div class="menu">
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <h1>~ Scoots ~</h1>
+          <a href="index.html"
+            ><img src="images/scoot-logo.webp" alt="Scoots Logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="toggle-container">
+        <img id="mode-icon" src="images/sun.svg" alt="Dark mode icon" />
+        <label class="switch">
+          <input type="checkbox" onclick="darkmode();" />
+          <span class="slider round"></span>
+        </label>
       </div>
     </header>
 
@@ -122,22 +134,42 @@
           <div class="form-group">
             <p>Rental Services and Agreements:</p>
             <ul>
-              <li>A $50 security deposit is required to confirm reservations.</li>
-              <li>A valid driver's license is required in hand at the time of rental.</li>
-              <li>No one under the age of 12 years of age is allowed to ride on the scooters.</li>
+              <li>
+                A $50 security deposit is required to confirm reservations.
+              </li>
+              <li>
+                A valid driver's license is required in hand at the time of
+                rental.
+              </li>
+              <li>
+                No one under the age of 12 years of age is allowed to ride on
+                the scooters.
+              </li>
               <li>Fuel charge is not included.</li>
               <li>Unlimited mileage.</li>
               <li>Liability insurance is included.</li>
               <li>Damage insurance is available for purchase.</li>
-              <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
-              <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or Venmo.</li>
+              <li>
+                Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.
+              </li>
+              <li>
+                Payment via Google Pay, Apple Pay, cash, credit card, debit
+                card, or Venmo.
+              </li>
               <li>Rentals may be returned to either physical location.</li>
             </ul>
           </div>
-  
+
           <div class="form-group" id="agreement-checkbox-group">
-            <input type="checkbox" id="agreement-checkbox" name="agreement" required>
-            <label id="agreement-label" for="agreement-checkbox">I agree to the rental service agreements</label>
+            <input
+              type="checkbox"
+              id="agreement-checkbox"
+              name="agreement"
+              required
+            />
+            <label id="agreement-label" for="agreement-checkbox"
+              >I agree to the rental service agreements</label
+            >
           </div>
 
           <button type="submit">Submit Reservation</button>

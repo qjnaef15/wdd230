@@ -3,40 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Welcome to Pasco Chamber of Commerce">
-    <meta name="author" content="Quentin Naef">
-    <meta property="og:title" content="~ Scoots ~ Rental Company - Quentin Naef">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://i.ytimg.com/vi/df8RwLalT-0/maxresdefault.jpg">
-    <meta property="og:url" content="https://scootsrentalsofcozumel.com">
-    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Scoots of Cozumel - Home Page" />
+    <meta name="author" content="Quentin Naef" />
+    <meta
+      property="og:title"
+      content="~ Scoots ~ Rental Company - Quentin Naef"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://i.ytimg.com/vi/df8RwLalT-0/maxresdefault.jpg"
+    />
+    <meta property="og:url" content="https://scootsrentalsofcozumel.com" />
+    <link rel="icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="styles/large.css" />
-    <link rel="stylesheet" href="styles/medium.css"/>
-    <link rel="stylesheet" href="styles/mobile.css"/>
-    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/dark-mode.css" />
+    <script src="scripts/dark-mode.js"></script>
     <title>Scoots Rentals</title>
   </head>
-  <body>
+  <body class="light-mode">
     <header>
       <!-- Navigation and Logo -->
-      <a href="#" id="hamburger">&#9776;</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rentals.html">Rentals</a></li>
-          <li><a href="reservations.html">Reservations</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <h1>~ Scoots ~</h1>
-        <a href="index.html"
-          ><img src="images/scoot-logo.webp" alt="Scoots Logo"
-        /></a>
+      <div class="menu">
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <h1>~ Scoots ~</h1>
+          <a href="index.html"
+            ><img src="images/scoot-logo.webp" alt="Scoots Logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="toggle-container">
+        <img id="mode-icon" src="images/sun.svg" alt="Dark mode icon" />
+        <label class="switch">
+          <input type="checkbox" onclick="darkmode();" />
+          <span class="slider round"></span>
+        </label>
       </div>
     </header>
 
-    <main>
+    <main class="home">
       <!-- Hero Section with Images -->
       <section class="hero">
         <!-- Call to Action Image -->
@@ -99,25 +117,33 @@
         <section id="weather">
           <div id="alerts"></div>
           <div id="current-weather">
-              <h2>Current Weather</h2>
-              <div id="weather-icon"></div>
-              <p id="temperature"></p>
-              <p id="description"></p>
-              <p id="humidity"></p>
+            <h2>Current Weather</h2>
+            <div id="weather-icon"></div>
+            <p id="temperature"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
           </div>
           <div id="one-day-forecast">
-              <h2>One Day Forecast</h2>
-              <!-- Forecast for one day will appear here-->
+            <h2>One Day Forecast</h2>
+            <!-- Forecast for one day will appear here-->
           </div>
-      </section>
+        </section>
 
         <!-- Map Section -->
         <section class="map">
           <h2>Map</h2>
           <!-- Map content goes here -->
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7473.9653930480945!2d-86.95407819601724!3d20.50693557741389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1sen!2sus!4v1701316653217!5m2!1sen!2sus" width="900" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7473.9653930480945!2d-86.95407819601724!3d20.50693557741389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cebd031b81%3A0x1d4d43952273f214!2sFERRY%20TO%20PLAYA%20DEL%20CARMEN!5e0!3m2!1sen!2sus!4v1701316653217!5m2!1sen!2sus"
+            width="900"
+            height="400"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </section>
       </section>
-    </section>
     </main>
 
     <footer>

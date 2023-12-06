@@ -12,16 +12,20 @@
 /* CSS HSL */
 :root {
   --mint-green: hsla(167, 100%, 92%, 1);
-  --russian-violet: hsla(253, 57%, 20%, 1);
-  --turquoise-grad: rgb(203, 251, 245);
-  --ucla-blue: hsla(204, 66%, 40%, 1);
-  --light-red: hsla(0, 100%, 76%, 1);
+  --russian-violet-grad: rgb(17, 11, 41);
+  --turquoise-grad: rgb(50, 131, 121);
+  --ucla-blue-grad: rgb(24, 76, 111);
+  --light-red-grad: rgb(210, 109, 109);
 }
 
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
+}
+
+.light-mode {
+  background-color: var(--mint-green);
 }
 
 h1,
@@ -37,11 +41,86 @@ h6 {
 header {
   background-color: var(--russian-violet);
   color: var(--light-red);
+}
+
+.menu {
   padding: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+#mode-icon {
+  width: 30px;
+  height: 36px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--turquoise);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--russian-violet);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--light-red);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--turquoise);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 #hamburger {
@@ -90,12 +169,10 @@ nav ul li a:hover {
 }
 
 /* Main - Home */
-main {
-  /* Style main content */
-  background-color: var(--mint-green);
-}
 
-/* Add this to your CSS file */
+.home {
+    background-color: var(--mint-green);
+}
 
 /* Hero Section Styles */
 .hero {
@@ -163,6 +240,7 @@ main {
 .summary li {
   color: var(--russian-violet);
   text-align: left;
+  padding: 10px;
 }
 
 .weather-map-container {
@@ -224,7 +302,7 @@ main {
 }
 
 /* Rental Page Styles */
-.rentals main {
+.rentals {
   background-color: var(--mint-green);
 }
 
@@ -311,11 +389,11 @@ main {
 }
 
 .price-table tr:nth-child(even) {
-  background-color: var(--turquoise); /* Light gray background for even rows */
+  background-color: var(--turquoise); 
 }
 
 .price-table tr:nth-child(odd) {
-  background-color: var(--turquoise-grad); /* White background for odd rows */
+  background-color: var(--turquoise-grad); 
 }
 
 /* Reservation Page Styles */
@@ -424,9 +502,6 @@ main.thanks {
 }
 
 /* Contact Us Page Styles */
-.contactus body {
-    background-color: var(--mint-green);
-}
 
 .contact {
   display: flex;
@@ -450,13 +525,13 @@ main.thanks {
 }
 
 .info h2 {
-  color: var(--russian-violet);
+  color: var(--russian-violet-grad);
   text-align: center;
 }
 
 .info address {
   font-style: normal;
-  color: ghostwhite;
+  color: var(--russian-violet);
 }
 
 .map-container {
@@ -470,8 +545,8 @@ main.thanks {
 }
 
 .contact-form-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contact-form {
@@ -486,7 +561,7 @@ main.thanks {
 }
 
 .contact-form h1 {
-    color: var(--russian-violet);
+  color: var(--russian-violet);
 }
 
 form {
