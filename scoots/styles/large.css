@@ -70,7 +70,7 @@ header {
   margin-left: 10px;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -84,8 +84,8 @@ header {
   right: 0;
   bottom: 0;
   background-color: var(--turquoise);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -96,8 +96,8 @@ header {
   left: 4px;
   bottom: 4px;
   background-color: var(--russian-violet);
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
@@ -171,7 +171,7 @@ nav ul li a:hover {
 /* Main - Home */
 
 .home {
-    background-color: var(--mint-green);
+  background-color: var(--mint-green);
 }
 
 /* Hero Section Styles */
@@ -222,6 +222,28 @@ nav ul li a:hover {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 50px;
+}
+
+.gallery-container img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px var(--ucla-blue);
+  transition: opacity 0.5s ease-in-out;
+  padding: 10px;
+  margin-left: 10px;
+}
+
+.rental-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .summary h2 {
@@ -389,11 +411,11 @@ nav ul li a:hover {
 }
 
 .price-table tr:nth-child(even) {
-  background-color: var(--turquoise); 
+  background-color: var(--turquoise);
 }
 
 .price-table tr:nth-child(odd) {
-  background-color: var(--mint-green-grad); 
+  background-color: var(--mint-green-grad);
 }
 
 /* Reservation Page Styles */

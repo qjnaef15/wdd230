@@ -1,4 +1,7 @@
-const kelvinToFahrenheit = (kelvin) => ((kelvin - 273.15) * 1.8 + 32).toFixed(0);
+// Define kelvinToFahrenheit function if not already defined
+if (typeof kelvinToFahrenheit === 'undefined') {
+    var kelvinToFahrenheit = (kelvin) => ((kelvin - 273.15) * 1.8 + 32).toFixed(0);
+}
 
 const apiURL = 'https://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&appid=493485c1b041185d95a0b516f6a6a100';
 
@@ -59,7 +62,8 @@ const getWeatherAndForecast = async () => {
     const weatherData = await response.json();
 
     displayCurrentWeather(weatherData.list[0]);
-    displayTomorrowForecast(weatherData.list); 
+    displayTomorrowForecast(weatherData.list);
 };
 
+// Call the main function
 getWeatherAndForecast();
