@@ -5,9 +5,9 @@ function darkmode() {
 
     // Update the mode icon based on the dark mode state
     if (isDarkMode) {
-        modeIcon.src = "images/moon.svg"; // Replace with the moon icon or any other dark mode icon
+        modeIcon.src = "images/moon.svg"; 
     } else {
-        modeIcon.src = "images/sun.svg"; // Replace with the sun icon or any other light mode icon
+        modeIcon.src = "images/sun.svg"; 
     }
 
     // Save the user's preference to localStorage
@@ -20,6 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (savedDarkMode && savedDarkMode === "true") {
         document.body.classList.add("dark-mode");
-        document.getElementById("mode-icon").src = "images/moon.svg"; // Replace with the moon icon or any other dark mode icon
+        document.getElementById("mode-icon").src = "images/moon.svg"; 
     }
 });
