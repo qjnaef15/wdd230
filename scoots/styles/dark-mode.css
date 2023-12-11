@@ -122,3 +122,7 @@
 .dark-mode .info address {
     color: ghostwhite;
 }
+
+.dark-mode .thanks p {
+    color:var(--mint-green);
+}

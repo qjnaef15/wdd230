@@ -14,25 +14,37 @@
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/mobile.css">
     <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/dark-mode.css">
+    <script src="scripts/dark-mode.js"></script>
     <title>Scoots Rentals</title>
   </head>
   <body>
     <header>
       <!-- Navigation and Logo -->
-      <a href="#" id="hamburger">&#9776;</a>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="rentals.html">Rentals</a></li>
-          <li><a href="reservations.html">Reservations</a></li>
-          <li><a href="#Contact Us">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="logo">
-        <h1>~ Scoots ~</h1>
-        <a href="index.html"
-          ><img src="images/scoot-logo.webp" alt="Scoots Logo"
-        /></a>
+      <div class="menu">
+        <a href="#" id="hamburger">&#9776;</a>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rentals.html">Rentals</a></li>
+            <li><a href="reservations.html">Reservations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <h1>~ Scoots ~</h1>
+          <a href="index.html"
+            ><img src="images/scoot-logo.webp" alt="Scoots Logo"
+          /></a>
+        </div>
+      </div>
+
+      <div class="toggle-container">
+        <img id="mode-icon" src="images/sun.svg" alt="Dark mode icon" />
+        <label class="switch">
+          <input type="checkbox" onclick="darkmode();" />
+          <span class="slider round"></span>
+        </label>
       </div>
     </header>
 
