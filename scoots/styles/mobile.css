@@ -74,6 +74,10 @@
     width: fit-content;
   }
 
+  #directionsModal {
+    padding-top: 100px;
+  }
+
   .info {
     grid-template-columns: 1fr;
   }
