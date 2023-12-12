@@ -138,7 +138,7 @@
 
         <!-- Map Section -->
         <section class="map">
-          <h2>Directions to Scoots</h2>
+          <h2>Directions to Scoots - <a href="#" id="directionsLink">View Directions</a></h2>
           <!-- Map content goes here -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.744427306838!2d-86.98008460321039!3d20.475687600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e59cd70625421%3A0xb1974a1818657af2!2sCozumel%20Cruise%20Terminal!5e0!3m2!1sen!2sus!4v1701558776863!5m2!1sen!2sus"
@@ -149,8 +149,26 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
+        
+          <!-- Modal box content -->
+          <div id="directionsModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <p>Follow these directions to reach Scoots:</p>
+              <ol>
+                <li>Start at the Cozumel International Airport.</li>
+                <li>Head southeast on Carr. Costera Sur toward Av. 8 de Octubre.</li>
+                <li>Continue straight onto Av. 8 de Octubre.</li>
+                <li>Turn right onto Calle 11 Sur.</li>
+                <li>Continue on Calle 11 Sur until you reach the beautiful Ocean View Street.</li>
+                <li>Turn left onto Ocean View Street.</li>
+                <li>Pass the charming local shops and restaurants on your way.</li>
+                <li>Keep going until you reach 123 Ocean View Street on your right.</li>
+                <li>You've arrived at your destination with a breathtaking ocean view!</li>
+              </ol>
+            </div>
+          </div>
         </section>
-      </section>
     </main>
 
     <footer>
@@ -188,5 +206,6 @@
     <script src="scripts/responsive.js"></script>
     <script src="scripts/weather.js"></script>
     <script src="scripts/gallery.js"></script>
+    <script src="scripts/popup.js"></script>
   </body>
 </html>

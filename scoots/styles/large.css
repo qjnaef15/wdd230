@@ -288,6 +288,52 @@ nav ul li a:hover {
   color: ghostwhite;
 }
 
+#directionsModal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 600px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0, 0, 0); 
+  background-color: rgba(0, 0, 0, 0.4); /
+}
+
+.modal-content {
+  background-color: var(--russian-violet-grad);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid var(--mint-green);
+  width: 80%;
+  text-align: left;
+}
+
+.close {
+  color: var(--turquoise);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--light-red);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#directionsLink {
+  color: ghostwhite;
+  text-decoration: underline;
+}
+
+#directionsLink:hover {
+  color: var(--light-red);
+}
+
 #weather {
   display: flex;
   flex-direction: column;
