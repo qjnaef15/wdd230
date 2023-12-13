@@ -58,21 +58,26 @@
       <section class="contact-form-container">
         <section class="contact-form">
           <h1>Contact Us</h1>
-          <form action="#" method="post">
+          <form id="contactForm" method="get">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required />
-
+    
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required />
-
+    
             <label for="comment">Comment:</label>
             <textarea id="comment" name="comment" required></textarea>
-
-            <input type="submit" value="Submit" />
+    
+            <input type="button" value="Submit" onclick="submitForm()" />
           </form>
         </section>
       </section>
-
+    
+      <div id="confirmation-banner">
+        Your message is received. We will respond within 24 hours.
+        <span id="close-btn" onclick="closeBanner()">&times;</span>
+      </div>
+    
       <section class="info">
         <section class="location-1">
           <div>
@@ -166,5 +171,6 @@
       </div>
     </footer>
     <script src="scripts/responsive.js"></script>
+    <script src="scripts/message.js"></script>
   </body>
 </html>

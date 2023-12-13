@@ -589,6 +589,26 @@ main.thanks {
   padding: 20px;
 }
 
+#confirmation-banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--light-red);
+  color: var(--russian-violet-grad);
+  text-align: center;
+  padding: 10px;
+  display: none;
+  font-size: 20px;
+}
+
+#close-btn {
+  cursor: pointer;
+  color: var(--ucla-blue-grad);
+  float: right;
+  font-size: 40px;
+}
+
 .info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -663,14 +683,14 @@ textarea {
   border-radius: 4px;
 }
 
-input[type="submit"] {
+input[type="button"] {
   background-color: var(--russian-violet);
   color: var(--mint-green);
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-input[type="submit"]:hover {
+input[type="button"]:hover {
   background-color: var(--ucla-blue);
   color: ghostwhite;
 }
