@@ -597,9 +597,10 @@ main.thanks {
   background-color: var(--light-red);
   color: var(--russian-violet-grad);
   text-align: center;
-  padding: 10px;
+  padding-top: 10px;
   display: none;
   font-size: 20px;
+  margin-top: 5px;
 }
 
 #close-btn {
