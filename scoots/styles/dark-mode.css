@@ -127,7 +127,7 @@
     color:var(--mint-green);
 }
 
-.dark-mode .modal-content li {
+.dark-mode .modal-content {
     background-color: var(--russian-violet-grad);
     border: 1px solid var(--mint-green);
 }
