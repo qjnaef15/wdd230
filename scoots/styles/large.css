@@ -303,16 +303,16 @@ nav ul li a:hover {
 }
 
 .modal-content {
-  background-color: var(--russian-violet-grad);
+  background-color: var(--mint-green);
   margin: auto;
   padding: 20px;
-  border: 1px solid var(--mint-green);
+  border: 1px solid var(--russian-violet);
   width: 80%;
   text-align: left;
 }
 
 .close {
-  color: var(--turquoise);
+  color: var(--ucla-blue);
   float: right;
   font-size: 28px;
   font-weight: bold;

@@ -126,3 +126,8 @@
 .dark-mode .thanks p {
     color:var(--mint-green);
 }
+
+.dark-mode .modal-content li {
+    background-color: var(--russian-violet-grad);
+    border: 1px solid var(--mint-green);
+}
